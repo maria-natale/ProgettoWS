@@ -21,29 +21,20 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+    <!-- https://schema.org/logo#ha_caratteristicheAmbientali -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <rdfs:domain rdf:resource="https://schema.org/logo#Coltura"/>
-        <rdfs:range rdf:resource="https://schema.org/logo#CaratteristicheAmbientali"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://schema.org/logo#caratteristicheAmbientali -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/logo#caratteristicheAmbientali">
+    <owl:ObjectProperty rdf:about="https://schema.org/logo#ha_caratteristicheAmbientali">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Coltura"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#PiantaColtivata"/>
         <rdfs:domain rdf:resource="https://schema.org/logo#Territorio"/>
         <rdfs:range rdf:resource="https://schema.org/logo#CaratteristicheAmbientali"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://schema.org/logo#caratteristicheClimatiche -->
+    <!-- https://schema.org/logo#ha_caratteristicheClimatiche -->
 
-    <owl:ObjectProperty rdf:about="https://schema.org/logo#caratteristicheClimatiche">
+    <owl:ObjectProperty rdf:about="https://schema.org/logo#ha_caratteristicheClimatiche">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://schema.org/logo#CaratteristicheAmbientali"/>
         <rdfs:range rdf:resource="https://schema.org/logo#CaratteristicheClimatiche"/>
@@ -51,9 +42,9 @@
     
 
 
-    <!-- https://schema.org/logo#caratteristicheSuolo -->
+    <!-- https://schema.org/logo#ha_caratteristicheSuolo -->
 
-    <owl:ObjectProperty rdf:about="https://schema.org/logo#caratteristicheSuolo">
+    <owl:ObjectProperty rdf:about="https://schema.org/logo#ha_caratteristicheSuolo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://schema.org/logo#CaratteristicheAmbientali"/>
         <rdfs:range rdf:resource="https://schema.org/logo#CaratteristicheSuolo"/>
@@ -61,12 +52,42 @@
     
 
 
-    <!-- https://schema.org/logo#precipitazioni -->
+    <!-- https://schema.org/logo#ha_precipitazioni -->
 
-    <owl:ObjectProperty rdf:about="https://schema.org/logo#precipitazioni">
+    <owl:ObjectProperty rdf:about="https://schema.org/logo#ha_precipitazioni">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://schema.org/logo#CaratteristicheClimatiche"/>
         <rdfs:range rdf:resource="https://schema.org/logo#Precipitazioni"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/logo#ha_temperatura -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/logo#ha_temperatura">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <rdfs:range rdf:resource="https://schema.org/logo#Temperatura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/logo#misurato_da -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/logo#misurato_da">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Misurazione"/>
+        <rdfs:range rdf:resource="https://schema.org/logo#Strumentazione"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/logo#si_trova_in -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/logo#si_trova_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Strumentazione"/>
+        <rdfs:range rdf:resource="https://schema.org/logo#Territorio"/>
     </owl:ObjectProperty>
     
 
@@ -92,42 +113,12 @@
     
 
 
-    <!-- https://schema.org/logo#coordinateEst -->
+    <!-- https://schema.org/logo#data -->
 
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#coordinateEst">
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#data">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Territorio"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://schema.org/logo#coordinateNord -->
-
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#coordinateNord">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Territorio"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://schema.org/logo#coordinateOvest -->
-
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#coordinateOvest">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Territorio"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://schema.org/logo#coordinateSud -->
-
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#coordinateSud">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Territorio"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Misurazione"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
@@ -234,22 +225,12 @@
     
 
 
-    <!-- https://schema.org/logo#mm_pioggiaMax -->
+    <!-- https://schema.org/logo#ha_locazione -->
 
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#mm_pioggiaMax">
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#ha_locazione">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Precipitazioni"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://schema.org/logo#mm_pioggiaMin -->
-
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#mm_pioggiaMin">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Precipitazioni"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Territorio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -258,7 +239,7 @@
 
     <owl:DatatypeProperty rdf:about="https://schema.org/logo#morfologia">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Coltura"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#PiantaColtivata"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -268,7 +249,7 @@
 
     <owl:DatatypeProperty rdf:about="https://schema.org/logo#nome">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Coltura"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#PiantaColtivata"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -278,7 +259,7 @@
 
     <owl:DatatypeProperty rdf:about="https://schema.org/logo#nomelatino">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Coltura"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#PiantaColtivata"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -316,12 +297,42 @@
     
 
 
-    <!-- https://schema.org/logo#specie -->
+    <!-- https://schema.org/logo#precipitazioniMax -->
 
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#specie">
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#precipitazioniMax">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#Coltura"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/logo#precipitazioniMin -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#precipitazioniMin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/logo#temperaturaMax -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#temperaturaMax">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Temperatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/logo#temperaturaMin -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#temperaturaMin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Temperatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
@@ -364,32 +375,26 @@
     
 
 
-    <!-- https://schema.org/logo#tipoClima -->
+    <!-- https://schema.org/logo#tipoSensore -->
 
-    <owl:DatatypeProperty rdf:about="https://schema.org/logo#tipoClima">
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#tipoSensore">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Strumentazione"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>echistotermico</rdf:first>
+                        <rdf:first>precipitazioni</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>megatermico</rdf:first>
+                                <rdf:first>temperatura</rdf:first>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>mesotermico</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first>microtermico</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
+                                        <rdf:first>umidità</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
@@ -398,6 +403,16 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/logo#valore -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/logo#valore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://schema.org/logo#Misurazione"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -413,51 +428,112 @@
     
 
 
+    <!-- http://dbpedia.org/ontology/Agricolture -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Agricolture"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Territory -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Territory">
+        <owl:equivalentClass rdf:resource="https://schema.org/logo#Territorio"/>
+    </owl:Class>
+    
+
+
     <!-- https://schema.org/logo#CaratteristicheAmbientali -->
 
-    <owl:Class rdf:about="https://schema.org/logo#CaratteristicheAmbientali"/>
+    <owl:Class rdf:about="https://schema.org/logo#CaratteristicheAmbientali">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://schema.org/logo#CaratteristicheClimatiche"/>
+            <rdf:Description rdf:about="https://schema.org/logo#CaratteristicheSuolo"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="en">Le caratteristiche ambientali specificano particolari condizioni climatiche e del suolo</rdfs:comment>
+        <rdfs:label xml:lang="it">caratteristiche ambientali</rdfs:label>
+        <rdfs:label xml:lang="en">environmental features</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/logo#CaratteristicheClimatiche -->
 
-    <owl:Class rdf:about="https://schema.org/logo#CaratteristicheClimatiche"/>
+    <owl:Class rdf:about="https://schema.org/logo#CaratteristicheClimatiche">
+        <rdfs:comment xml:lang="it">Le caratteristiche climatiche specificano le temperature, il grado di umidità e la quantità di precipitazioni che caratterizzano l&apos;ambiente.</rdfs:comment>
+        <rdfs:label xml:lang="it">caratteristiche climatiche</rdfs:label>
+        <rdfs:label xml:lang="en">climatic features</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/logo#CaratteristicheSuolo -->
 
-    <owl:Class rdf:about="https://schema.org/logo#CaratteristicheSuolo"/>
-    
-
-
-    <!-- https://schema.org/logo#Coltura -->
-
-    <owl:Class rdf:about="https://schema.org/logo#Coltura"/>
+    <owl:Class rdf:about="https://schema.org/logo#CaratteristicheSuolo">
+        <rdfs:comment xml:lang="it">Le caratteristiche del suolo specificano altitudine, pendenza, il grado di assorbimento di acqua, la tessitura e la fertilità di un particolare terreno.</rdfs:comment>
+        <rdfs:label xml:lang="it">caratteristiche del suolo</rdfs:label>
+        <rdfs:label xml:lang="en">land features</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/logo#Misurazione -->
 
-    <owl:Class rdf:about="https://schema.org/logo#Misurazione"/>
+    <owl:Class rdf:about="https://schema.org/logo#Misurazione">
+        <rdfs:comment xml:lang="it">La misurazione è caratterizzata da un valore misurato e dalla data in cui questo è stato registrato. Essa è associata ad uno specifico strumento di misurazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">measurement</rdfs:label>
+        <rdfs:label xml:lang="it">misurazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/logo#PiantaColtivata -->
+
+    <owl:Class rdf:about="https://schema.org/logo#PiantaColtivata">
+        <rdfs:label xml:lang="it">Le piante coltivate sono la fonte primaria di approvvigionamento, dal momento che le droghe hanno in gran parte un&apos;origine vegetale. Oggi, le piante spontanee sono state soppiantate da quelle coltivate, sostanzialmente per ragioni di mercato. Le piante coltivate risentono delle caratteristiche ambientali e, per tale ragione, ognuna di esse ha associate delle specifiche caratteristiche ideali.</rdfs:label>
+        <rdfs:label xml:lang="it">coltivazione</rdfs:label>
+        <rdfs:label xml:lang="en">colture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/ontology/Agricolture"/>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/logo#Precipitazioni -->
 
-    <owl:Class rdf:about="https://schema.org/logo#Precipitazioni"/>
+    <owl:Class rdf:about="https://schema.org/logo#Precipitazioni">
+        <rdfs:comment xml:lang="it">Le precipitazioni definiscono i mm di pioggia minimi annui e i mm di pioggia massimi.</rdfs:comment>
+        <rdfs:label xml:lang="en">precipitation</rdfs:label>
+        <rdfs:label xml:lang="it">precipitazioni</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/logo#Strumentazione -->
 
-    <owl:Class rdf:about="https://schema.org/logo#Strumentazione"/>
+    <owl:Class rdf:about="https://schema.org/logo#Strumentazione">
+        <rdfs:comment xml:lang="it">La strumentazione è caratterizzata da un tipo di sensore utilizzato per il rilevamento dei parametri ambientali in un determinato territorio.</rdfs:comment>
+        <rdfs:label xml:lang="en">sensor</rdfs:label>
+        <rdfs:label xml:lang="it">sensore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/logo#Temperatura -->
+
+    <owl:Class rdf:about="https://schema.org/logo#Temperatura">
+        <rdfs:comment xml:lang="it">La temperatura è caratterizzata da temperatura minima e massima.</rdfs:comment>
+        <rdfs:comment xml:lang="en">temperature</rdfs:comment>
+        <rdfs:label xml:lang="it">Temperatura</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- https://schema.org/logo#Territorio -->
 
-    <owl:Class rdf:about="https://schema.org/logo#Territorio"/>
+    <owl:Class rdf:about="https://schema.org/logo#Territorio">
+        <rdfs:comment xml:lang="it">Un territorio è un&apos;area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo.</rdfs:comment>
+        <rdfs:label xml:lang="it">territorio</rdfs:label>
+        <rdfs:label xml:lang="en">territory</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
