@@ -28,25 +28,22 @@
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://schema.org/logo#Misurazione"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://schema.org/logo#PiantaColtivata"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://schema.org/logo#Precipitazioni"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://schema.org/logo#Strumentazione"/>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <Class IRI="https://schema.org/logo#TerrenoColtivato"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://schema.org/logo#Territorio"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://schema.org/logo#adatta_a"/>
+        <Class IRI="https://schema.org/logo#https://dbpedia.org/ontology/City"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
@@ -58,16 +55,19 @@
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#ha_coltura"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
+        <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
@@ -85,7 +85,10 @@
         <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="https://schema.org/logo#morfologia"/>
@@ -115,10 +118,13 @@
         <DataProperty IRI="https://schema.org/logo#tessitura"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://schema.org/logo#valore"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#CA1"/>
@@ -152,6 +158,24 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#CA9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#CC1"/>
@@ -196,6 +220,9 @@
         <NamedIndividual IRI="https://schema.org/logo#CC9"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CCPompei"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#CS1"/>
     </Declaration>
     <Declaration>
@@ -230,6 +257,24 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#Loc._Timpe"/>
@@ -299,6 +344,36 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#T5-24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#avena"/>
@@ -346,6 +421,18 @@
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
     </DisjointUnion>
     <ClassAssertion>
+        <Class IRI="https://schema.org/logo#https://dbpedia.org/ontology/City"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#https://dbpedia.org/ontology/City"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#https://dbpedia.org/ontology/City"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
         <NamedIndividual IRI="https://schema.org/logo#CA1"/>
     </ClassAssertion>
@@ -388,6 +475,30 @@
     <ClassAssertion>
         <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
         <NamedIndividual IRI="https://schema.org/logo#CA9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
@@ -446,6 +557,10 @@
         <NamedIndividual IRI="https://schema.org/logo#CC9"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CCPompei"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
         <NamedIndividual IRI="https://schema.org/logo#CS1"/>
     </ClassAssertion>
@@ -494,8 +609,28 @@
         <NamedIndividual IRI="https://schema.org/logo#CS9"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://schema.org/logo#Territorio"/>
-        <NamedIndividual IRI="https://schema.org/logo#Loc._Timpe"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://schema.org/logo#Precipitazioni"/>
@@ -584,6 +719,46 @@
     <ClassAssertion>
         <Class IRI="https://schema.org/logo#Temperatura"/>
         <NamedIndividual IRI="https://schema.org/logo#T5-24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#TerrenoColtivato"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#TerrenoColtivato"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#TerrenoColtivato"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://schema.org/logo#PiantaColtivata"/>
@@ -744,6 +919,66 @@
         <NamedIndividual IRI="https://schema.org/logo#CS9"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio1"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio1"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze1"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze1"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
         <NamedIndividual IRI="https://schema.org/logo#CC1"/>
         <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
@@ -884,6 +1119,106 @@
         <NamedIndividual IRI="https://schema.org/logo#T18-30"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_coltura"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio1"/>
+        <NamedIndividual IRI="https://schema.org/logo#orzo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio1"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_coltura"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio2"/>
+        <NamedIndividual IRI="https://schema.org/logo#avena"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColAnzio2"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_coltura"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColFirenze1"/>
+        <NamedIndividual IRI="https://schema.org/logo#lino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerrColFirenze1"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio1"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio1"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAAnzio2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio2"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze1"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze1"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze2"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze3"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAFirenze2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze3"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei1"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei1"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei2"/>
+        <NamedIndividual IRI="https://schema.org/logo#CAPompei2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei2"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <NamedIndividual IRI="https://schema.org/logo#avena"/>
         <NamedIndividual IRI="https://schema.org/logo#CA8"/>
@@ -906,7 +1241,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <NamedIndividual IRI="https://schema.org/logo#mais"/>
-        <NamedIndividual IRI="https://schema.org/logo#CA5"/>
+        <NamedIndividual IRI="https://schema.org/logo#CA11"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
@@ -1082,11 +1417,6 @@
         <DataProperty IRI="https://schema.org/logo#tessitura"/>
         <NamedIndividual IRI="https://schema.org/logo#CS11"/>
         <Literal>terreno argilloso</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#tessitura"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
-        <Literal>terreno fosforoso</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
@@ -1309,9 +1639,154 @@
         <Literal>terreno sabbioso</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
-        <NamedIndividual IRI="https://schema.org/logo#Loc._Timpe"/>
-        <Literal>Aquara</Literal>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
+        <Literal>terreno fosforoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
+        <Literal>terreno sabbioso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
+        <Literal>terreno sassoso</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
@@ -1534,6 +2009,76 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.449165</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.619278</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.44941</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioAnzio2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.623324</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.761185</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.253094</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.74982</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.270858</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.74914</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioFirenze3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.272683</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.728935</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.518529</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.74174</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#TerritorioPompei2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.509317</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#nome"/>
         <NamedIndividual IRI="https://schema.org/logo#avena"/>
         <Literal>Avena</Literal>
@@ -1706,10 +2251,6 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">600.0</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://schema.org/logo#adatta_a"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1722,6 +2263,14 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#ha_coltura"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1730,17 +2279,9 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
+        <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://schema.org/logo#adatta_a"/>
-        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <Class IRI="https://schema.org/logo#PiantaColtivata"/>
@@ -1758,6 +2299,14 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_coltura"/>
+        <Class IRI="https://schema.org/logo#TerrenoColtivato"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
         <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
     </ObjectPropertyDomain>
@@ -1766,17 +2315,9 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
-        <Class IRI="https://schema.org/logo#Misurazione"/>
+        <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
+        <Class IRI="https://schema.org/logo#TerrenoColtivato"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
-        <Class IRI="https://schema.org/logo#Strumentazione"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://schema.org/logo#adatta_a"/>
-        <Class IRI="https://schema.org/logo#Territorio"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
@@ -1790,6 +2331,14 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#ha_coltura"/>
+        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <Class IRI="https://schema.org/logo#https://dbpedia.org/ontology/City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
         <Class IRI="https://schema.org/logo#Precipitazioni"/>
     </ObjectPropertyRange>
@@ -1798,11 +2347,7 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Class IRI="https://schema.org/logo#Temperatura"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
-        <Class IRI="https://schema.org/logo#Strumentazione"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
+        <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
         <Class IRI="https://schema.org/logo#Territorio"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
@@ -1826,7 +2371,11 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#longitudine"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1865,21 +2414,9 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <DataProperty IRI="https://schema.org/logo#tessitura"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="https://schema.org/logo#valore"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="https://schema.org/logo#data"/>
-        <Class IRI="https://schema.org/logo#Misurazione"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
@@ -1894,7 +2431,7 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
         <Class IRI="https://schema.org/logo#Territorio"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1932,14 +2469,6 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
     <DataPropertyDomain>
         <DataProperty IRI="https://schema.org/logo#tessitura"/>
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
-        <Class IRI="https://schema.org/logo#Strumentazione"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="https://schema.org/logo#valore"/>
-        <Class IRI="https://schema.org/logo#Misurazione"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
@@ -1977,8 +2506,8 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
+        <DataProperty IRI="https://schema.org/logo#latitudine"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="https://schema.org/logo#morfologia"/>
@@ -2027,18 +2556,6 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
             <Literal>terreno sassoso</Literal>
         </DataOneOf>
     </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
-        <DataOneOf>
-            <Literal>precipitazioni</Literal>
-            <Literal>temperatura</Literal>
-            <Literal>umidità</Literal>
-        </DataOneOf>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="https://schema.org/logo#valore"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://schema.org/logo#CaratteristicheAmbientali</IRI>
@@ -2085,21 +2602,6 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Literal xml:lang="en">land features</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://schema.org/logo#Misurazione</IRI>
-        <Literal xml:lang="it">La misurazione è caratterizzata da un valore misurato e dalla data in cui questo è stato registrato. Essa è associata ad uno specifico strumento di misurazione.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://schema.org/logo#Misurazione</IRI>
-        <Literal xml:lang="en">measurement</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://schema.org/logo#Misurazione</IRI>
-        <Literal xml:lang="it">misurazione</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://schema.org/logo#PiantaColtivata</IRI>
         <Literal xml:lang="it">Le piante coltivate sono la fonte primaria di approvvigionamento, dal momento che le droghe hanno in gran parte un&apos;origine vegetale. Oggi, le piante spontanee sono state soppiantate da quelle coltivate, sostanzialmente per ragioni di mercato. Le piante coltivate risentono delle caratteristiche ambientali e, per tale ragione, ognuna di esse ha associate delle specifiche caratteristiche ideali.</Literal>
@@ -2136,21 +2638,6 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://schema.org/logo#Strumentazione</IRI>
-        <Literal xml:lang="it">La strumentazione è caratterizzata da un tipo di sensore utilizzato per il rilevamento dei parametri ambientali in un determinato territorio.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://schema.org/logo#Strumentazione</IRI>
-        <Literal xml:lang="en">sensor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://schema.org/logo#Strumentazione</IRI>
-        <Literal xml:lang="it">sensore</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://schema.org/logo#Temperatura</IRI>
         <Literal xml:lang="it">La temperatura è caratterizzata da temperatura minima e massima.</Literal>
     </AnnotationAssertion>
@@ -2166,6 +2653,16 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#TerrenoColtivato</IRI>
+        <Literal xml:lang="it">Specifica in quale territorio una certa coltivazione viene coltivata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#TerrenoColtivato</IRI>
+        <Literal xml:lang="it">terreno coltivato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://schema.org/logo#Territorio</IRI>
         <Literal xml:lang="it">Un territorio è un&apos;area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo.</Literal>
     </AnnotationAssertion>
@@ -2178,6 +2675,11 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://schema.org/logo#Territorio</IRI>
         <Literal xml:lang="en">territory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#https://dbpedia.org/ontology/City</IRI>
+        <Literal xml:lang="en">dbo:City</Literal>
     </AnnotationAssertion>
 </Ontology>
 
