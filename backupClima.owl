@@ -1,0 +1,1674 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/coltivazioni"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ontologies/coltivazioni">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/coltivazioni"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Agricolture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#Misurazione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#Strumentazione"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#data"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#morfologia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#nome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#nomelatino"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/logo#valore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CC9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P100-200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P200-500"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P400-500"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P400-600"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P400-800"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P400-900"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P50-100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P50-500"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T1-10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T1-30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T10-20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T10-25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T10-32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T13-25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T14-23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T15-24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T16-18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T16-24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T18-30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T20-25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#T5-24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/logo#P600+"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+    </EquivalentClasses>
+    <DisjointUnion>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P100-200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P200-500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-600"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-800"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-900"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T13-25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T14-23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T15-24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T18-30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T20-25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#T5-24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#P600+"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC1"/>
+        <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC1"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC10"/>
+        <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC10"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC11"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC11"/>
+        <NamedIndividual IRI="https://schema.org/logo#T20-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC12"/>
+        <NamedIndividual IRI="https://schema.org/logo#P200-500"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC12"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC13"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-500"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC13"/>
+        <NamedIndividual IRI="https://schema.org/logo#T14-23"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC14"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-800"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC14"/>
+        <NamedIndividual IRI="https://schema.org/logo#T15-24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC2"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC2"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-30"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC3"/>
+        <NamedIndividual IRI="https://schema.org/logo#P600+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC3"/>
+        <NamedIndividual IRI="https://schema.org/logo#T13-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC4"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC4"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-32"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC5"/>
+        <NamedIndividual IRI="https://schema.org/logo#P100-200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC5"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC6"/>
+        <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC6"/>
+        <NamedIndividual IRI="https://schema.org/logo#T5-24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC7"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC7"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC8"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC8"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-30"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC9"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-500"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC9"/>
+        <NamedIndividual IRI="https://schema.org/logo#T18-30"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC1"/>
+        <Literal>molto umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC10"/>
+        <Literal>molto umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC11"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC12"/>
+        <Literal>secco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC13"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC14"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC2"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC3"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC4"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC5"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC6"/>
+        <Literal>secco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC7"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC8"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CC9"/>
+        <Literal>molto umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
+        <Literal>terreno fosforoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
+        <Literal>impermeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
+        <Literal>impermeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
+        <Literal>terreno sassoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
+        <Literal>impermeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
+        <Literal>terreno fosforoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
+        <Literal>terreno sassoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
+        <Literal>ben drenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
+        <Literal>terreno fosforoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
+        <Literal>terreno sabbioso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
+        <Literal>terreno sabbioso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P100-200"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P100-200"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P200-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P200-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">600.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P300-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">300.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">400.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">600.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">400.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-800"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">800.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-800"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">400.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-900"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">900.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P400-900"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">400.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-100"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-100"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P50-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T1-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T10-32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T13-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T13-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T14-23"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T14-23"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T15-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T15-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T16-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T18-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T18-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T20-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T20-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <NamedIndividual IRI="https://schema.org/logo#T5-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#T5-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <NamedIndividual IRI="https://schema.org/logo#P600+"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">600.0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
+        <Class IRI="https://schema.org/logo#Misurazione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
+        <Class IRI="https://schema.org/logo#Strumentazione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheClimatiche"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheSuolo"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#ha_precipitazioni"/>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#ha_temperatura"/>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#misurato_da"/>
+        <Class IRI="https://schema.org/logo#Strumentazione"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#si_trova_in"/>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#data"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#morfologia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#nome"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#nomelatino"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://schema.org/logo#valore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#data"/>
+        <Class IRI="https://schema.org/logo#Misurazione"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheClimatiche"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#morfologia"/>
+        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#nome"/>
+        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#nomelatino"/>
+        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <Class IRI="https://schema.org/logo#Precipitazioni"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <Class IRI="https://schema.org/logo#Temperatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
+        <Class IRI="https://schema.org/logo#Strumentazione"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#valore"/>
+        <Class IRI="https://schema.org/logo#Misurazione"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#data"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <DataOneOf>
+            <Literal>ben drenato</Literal>
+            <Literal>impermeabile</Literal>
+            <Literal>permeabile</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#fertilità"/>
+        <DataOneOf>
+            <Literal>alta</Literal>
+            <Literal>bassa</Literal>
+            <Literal>media</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#gradoUmidità"/>
+        <DataOneOf>
+            <Literal>alternato</Literal>
+            <Literal>arido</Literal>
+            <Literal>mediamente umido</Literal>
+            <Literal>molto umido</Literal>
+            <Literal>secco</Literal>
+            <Literal>umido</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#ha_locazione"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#morfologia"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#nome"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#nomelatino"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#pendenza"/>
+        <DataOneOf>
+            <Literal>alta</Literal>
+            <Literal>bassa</Literal>
+            <Literal>media</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMax"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#precipitazioniMin"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMax"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#temperaturaMin"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <DataOneOf>
+            <Literal>terreno argilloso</Literal>
+            <Literal>terreno fosforoso</Literal>
+            <Literal>terreno franco</Literal>
+            <Literal>terreno limoso</Literal>
+            <Literal>terreno sabbioso</Literal>
+            <Literal>terreno sassoso</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#tipoSensore"/>
+        <DataOneOf>
+            <Literal>precipitazioni</Literal>
+            <Literal>temperatura</Literal>
+            <Literal>umidità</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/logo#valore"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#CaratteristicheAmbientali</IRI>
+        <Literal xml:lang="en">Le caratteristiche ambientali specificano particolari condizioni climatiche e del suolo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#CaratteristicheAmbientali</IRI>
+        <Literal xml:lang="it">caratteristiche ambientali</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#CaratteristicheAmbientali</IRI>
+        <Literal xml:lang="en">environmental features</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#CaratteristicheClimatiche</IRI>
+        <Literal xml:lang="it">Le caratteristiche climatiche specificano le temperature, il grado di umidità e la quantità di precipitazioni che caratterizzano l&apos;ambiente.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#CaratteristicheClimatiche</IRI>
+        <Literal xml:lang="it">caratteristiche climatiche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#CaratteristicheClimatiche</IRI>
+        <Literal xml:lang="en">climatic features</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#CaratteristicheSuolo</IRI>
+        <Literal xml:lang="it">Le caratteristiche del suolo specificano altitudine, pendenza, il grado di assorbimento di acqua, la tessitura e la fertilità di un particolare terreno.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#CaratteristicheSuolo</IRI>
+        <Literal xml:lang="it">caratteristiche del suolo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#CaratteristicheSuolo</IRI>
+        <Literal xml:lang="en">land features</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#Misurazione</IRI>
+        <Literal xml:lang="it">La misurazione è caratterizzata da un valore misurato e dalla data in cui questo è stato registrato. Essa è associata ad uno specifico strumento di misurazione.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Misurazione</IRI>
+        <Literal xml:lang="en">measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Misurazione</IRI>
+        <Literal xml:lang="it">misurazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#PiantaColtivata</IRI>
+        <Literal xml:lang="it">Le piante coltivate sono la fonte primaria di approvvigionamento, dal momento che le droghe hanno in gran parte un&apos;origine vegetale. Oggi, le piante spontanee sono state soppiantate da quelle coltivate, sostanzialmente per ragioni di mercato. Le piante coltivate risentono delle caratteristiche ambientali e, per tale ragione, ognuna di esse ha associate delle specifiche caratteristiche ideali.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#PiantaColtivata</IRI>
+        <Literal xml:lang="it">coltivazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#PiantaColtivata</IRI>
+        <Literal xml:lang="en">colture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://schema.org/logo#PiantaColtivata</IRI>
+        <IRI>http://dbpedia.org/ontology/Agricolture</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#Precipitazioni</IRI>
+        <Literal xml:lang="it">Le precipitazioni definiscono i mm di pioggia minimi annui e i mm di pioggia massimi.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Precipitazioni</IRI>
+        <Literal xml:lang="en">precipitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Precipitazioni</IRI>
+        <Literal xml:lang="it">precipitazioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#Strumentazione</IRI>
+        <Literal xml:lang="it">La strumentazione è caratterizzata da un tipo di sensore utilizzato per il rilevamento dei parametri ambientali in un determinato territorio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Strumentazione</IRI>
+        <Literal xml:lang="en">sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Strumentazione</IRI>
+        <Literal xml:lang="it">sensore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#Temperatura</IRI>
+        <Literal xml:lang="it">La temperatura è caratterizzata da temperatura minima e massima.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#Temperatura</IRI>
+        <Literal xml:lang="en">temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Temperatura</IRI>
+        <Literal xml:lang="it">Temperatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://schema.org/logo#Territorio</IRI>
+        <Literal xml:lang="it">Un territorio è un&apos;area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Territorio</IRI>
+        <Literal xml:lang="it">territorio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://schema.org/logo#Territorio</IRI>
+        <Literal xml:lang="en">territory</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

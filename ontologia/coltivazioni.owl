@@ -5,6 +5,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:logo="https://schema.org/logo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/coltivazioni"/>
     
@@ -310,7 +311,7 @@
     <!-- https://schema.org/logo#precipitazioniMin -->
 
     <owl:DatatypeProperty rdf:about="https://schema.org/logo#precipitazioniMin">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="https://schema.org/logo#precipitazioniMax"/>
         <rdfs:domain rdf:resource="https://schema.org/logo#Precipitazioni"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
@@ -534,6 +535,116 @@
         <rdfs:label xml:lang="it">territorio</rdfs:label>
         <rdfs:label xml:lang="en">territory</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.org/logo#P100-200 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P100-200">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P200-500 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P200-500">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P300-600 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P300-600">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">600.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P400-500 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P400-500">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P400-600 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P400-600">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">600.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P400-800 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P400-800">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">800.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P400-900 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P400-900">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">900.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P50-100 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P50-100">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P50-500 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P50-500">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</logo:precipitazioniMax>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/logo#P600+ -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/logo#P600+">
+        <rdf:type rdf:resource="https://schema.org/logo#Precipitazioni"/>
+        <logo:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">600.0</logo:precipitazioniMin>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
