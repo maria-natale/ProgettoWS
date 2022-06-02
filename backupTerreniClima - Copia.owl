@@ -46,6 +46,9 @@
         <Class IRI="https://schema.org/logo#https://dbpedia.org/ontology/City"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="https://schema.org/logo#caratteristicheAmbientaliCompatibili"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
     </Declaration>
     <Declaration>
@@ -2248,6 +2251,10 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">600.0</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://schema.org/logo#caratteristicheAmbientaliCompatibili"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -2279,6 +2286,10 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/logo#caratteristicheAmbientaliCompatibili"/>
+        <Class IRI="https://schema.org/logo#PiantaColtivata"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <Class IRI="https://schema.org/logo#PiantaColtivata"/>
@@ -2315,6 +2326,10 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
         <Class IRI="https://schema.org/logo#TerrenoColtivato"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/logo#caratteristicheAmbientaliCompatibili"/>
+        <Class IRI="https://schema.org/logo#Territorio"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="https://schema.org/logo#ha_caratteristicheAmbientali"/>
         <Class IRI="https://schema.org/logo#CaratteristicheAmbientali"/>
