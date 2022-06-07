@@ -1,0 +1,210 @@
+Prefix(:=<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2>
+
+Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(:caratteristiche_ambientali))
+Declaration(Class(:caratteristiche_climatiche))
+Declaration(Class(:caratteristiche_del_suolo))
+Declaration(Class(:coltivazione))
+Declaration(Class(:precipitazioni))
+Declaration(Class(:temperatura))
+Declaration(Class(:terreno_coltivato))
+Declaration(Class(:territorio))
+Declaration(ObjectProperty(:caratteristiche_ambientali_compatibili))
+Declaration(ObjectProperty(:coltivazione_caratteristiche_ambientali))
+Declaration(ObjectProperty(:ha_caratteristiche_climatiche))
+Declaration(ObjectProperty(:ha_caratteristiche_suolo))
+Declaration(ObjectProperty(:ha_coltura))
+Declaration(ObjectProperty(:ha_locazione))
+Declaration(ObjectProperty(:ha_precipitazioni))
+Declaration(ObjectProperty(:ha_temperatura))
+Declaration(ObjectProperty(:ha_territorio))
+Declaration(ObjectProperty(:territorio_caratteristiche_ambientali))
+Declaration(DataProperty(:altitudine))
+Declaration(DataProperty(:drenaggio))
+Declaration(DataProperty(:fertilità))
+Declaration(DataProperty(:gradoUmidità))
+Declaration(DataProperty(:latitudine))
+Declaration(DataProperty(:longitudine))
+Declaration(DataProperty(:morfologia))
+Declaration(DataProperty(:nome))
+Declaration(DataProperty(:nomelatino))
+Declaration(DataProperty(:pendenza))
+Declaration(DataProperty(:precipitazioniMax))
+Declaration(DataProperty(:precipitazioniMin))
+Declaration(DataProperty(:temperaturaMax))
+Declaration(DataProperty(:temperaturaMin))
+Declaration(DataProperty(:tessitura))
+Declaration(NamedIndividual(:CA1))
+Declaration(NamedIndividual(:CC1))
+Declaration(NamedIndividual(:CS1))
+############################
+#   Object Properties
+############################
+
+# Object Property: :caratteristiche_ambientali_compatibili (:caratteristiche_ambientali_compatibili)
+
+SubObjectPropertyOf(:caratteristiche_ambientali_compatibili owl:topObjectProperty)
+ObjectPropertyDomain(:caratteristiche_ambientali_compatibili :coltivazione)
+ObjectPropertyRange(:caratteristiche_ambientali_compatibili :territorio)
+
+# Object Property: :coltivazione_caratteristiche_ambientali (:coltivazione_caratteristiche_ambientali)
+
+SubObjectPropertyOf(:coltivazione_caratteristiche_ambientali owl:topObjectProperty)
+ObjectPropertyDomain(:coltivazione_caratteristiche_ambientali :coltivazione)
+ObjectPropertyRange(:coltivazione_caratteristiche_ambientali :caratteristiche_ambientali)
+
+# Object Property: :ha_caratteristiche_climatiche (:ha_caratteristiche_climatiche)
+
+SubObjectPropertyOf(:ha_caratteristiche_climatiche owl:topObjectProperty)
+ObjectPropertyDomain(:ha_caratteristiche_climatiche :caratteristiche_ambientali)
+ObjectPropertyRange(:ha_caratteristiche_climatiche :caratteristiche_climatiche)
+
+# Object Property: :ha_caratteristiche_suolo (:ha_caratteristiche_suolo)
+
+SubObjectPropertyOf(:ha_caratteristiche_suolo owl:topObjectProperty)
+ObjectPropertyDomain(:ha_caratteristiche_suolo :caratteristiche_ambientali)
+ObjectPropertyRange(:ha_caratteristiche_suolo :caratteristiche_del_suolo)
+
+# Object Property: :ha_coltura (:ha_coltura)
+
+SubObjectPropertyOf(:ha_coltura owl:topObjectProperty)
+ObjectPropertyDomain(:ha_coltura :terreno_coltivato)
+ObjectPropertyRange(:ha_coltura :coltivazione)
+
+# Object Property: :ha_locazione (:ha_locazione)
+
+SubObjectPropertyOf(:ha_locazione owl:topObjectProperty)
+ObjectPropertyDomain(:ha_locazione :territorio)
+ObjectPropertyRange(:ha_locazione <http://dbpedia.org/ontology/City>)
+
+# Object Property: :ha_precipitazioni (:ha_precipitazioni)
+
+SubObjectPropertyOf(:ha_precipitazioni owl:topObjectProperty)
+ObjectPropertyDomain(:ha_precipitazioni :caratteristiche_climatiche)
+ObjectPropertyRange(:ha_precipitazioni :precipitazioni)
+
+# Object Property: :ha_temperatura (:ha_temperatura)
+
+SubObjectPropertyOf(:ha_temperatura owl:topObjectProperty)
+ObjectPropertyDomain(:ha_temperatura :caratteristiche_climatiche)
+ObjectPropertyRange(:ha_temperatura :temperatura)
+
+# Object Property: :ha_territorio (:ha_territorio)
+
+SubObjectPropertyOf(:ha_territorio owl:topObjectProperty)
+ObjectPropertyDomain(:ha_territorio :terreno_coltivato)
+ObjectPropertyRange(:ha_territorio :territorio)
+
+# Object Property: :territorio_caratteristiche_ambientali (:territorio_caratteristiche_ambientali)
+
+SubObjectPropertyOf(:territorio_caratteristiche_ambientali owl:topObjectProperty)
+ObjectPropertyDomain(:territorio_caratteristiche_ambientali :territorio)
+ObjectPropertyRange(:territorio_caratteristiche_ambientali :caratteristiche_ambientali)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :altitudine (:altitudine)
+
+SubDataPropertyOf(:altitudine owl:topDataProperty)
+
+# Data Property: :drenaggio (:drenaggio)
+
+SubDataPropertyOf(:drenaggio owl:topDataProperty)
+DataPropertyDomain(:drenaggio :caratteristiche_del_suolo)
+DataPropertyRange(:drenaggio xsd:string)
+
+# Data Property: :fertilità (:fertilità)
+
+SubDataPropertyOf(:fertilità owl:topDataProperty)
+
+# Data Property: :gradoUmidità (:gradoUmidità)
+
+SubDataPropertyOf(:gradoUmidità owl:topDataProperty)
+
+# Data Property: :latitudine (:latitudine)
+
+SubDataPropertyOf(:latitudine owl:topDataProperty)
+
+# Data Property: :longitudine (:longitudine)
+
+SubDataPropertyOf(:longitudine owl:topDataProperty)
+
+# Data Property: :morfologia (:morfologia)
+
+SubDataPropertyOf(:morfologia owl:topDataProperty)
+
+# Data Property: :nome (:nome)
+
+SubDataPropertyOf(:nome owl:topDataProperty)
+
+# Data Property: :nomelatino (:nomelatino)
+
+SubDataPropertyOf(:nomelatino owl:topDataProperty)
+
+# Data Property: :pendenza (:pendenza)
+
+SubDataPropertyOf(:pendenza owl:topDataProperty)
+
+# Data Property: :precipitazioniMax (:precipitazioniMax)
+
+SubDataPropertyOf(:precipitazioniMax owl:topDataProperty)
+
+# Data Property: :precipitazioniMin (:precipitazioniMin)
+
+SubDataPropertyOf(:precipitazioniMin owl:topDataProperty)
+
+# Data Property: :temperaturaMax (:temperaturaMax)
+
+SubDataPropertyOf(:temperaturaMax owl:topDataProperty)
+
+# Data Property: :temperaturaMin (:temperaturaMin)
+
+SubDataPropertyOf(:temperaturaMin owl:topDataProperty)
+
+# Data Property: :tessitura (:tessitura)
+
+SubDataPropertyOf(:tessitura owl:topDataProperty)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :caratteristiche_ambientali (:caratteristiche_ambientali)
+
+DisjointUnion(:caratteristiche_ambientali :caratteristiche_climatiche :caratteristiche_del_suolo)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :CA1 (:CA1)
+
+ClassAssertion(:caratteristiche_ambientali :CA1)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA1 :CC1)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA1 :CS1)
+
+# Individual: :CC1 (:CC1)
+
+ClassAssertion(:caratteristiche_climatiche :CC1)
+
+# Individual: :CS1 (:CS1)
+
+ClassAssertion(:caratteristiche_del_suolo :CS1)
+DataPropertyAssertion(:drenaggio :CS1 "permeabile"^^xsd:string)
+
+
+)

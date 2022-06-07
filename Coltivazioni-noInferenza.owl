@@ -79,13 +79,13 @@
         <ObjectProperty IRI="https://schema.org/logo#ha_territorio"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#drenaggio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#drenaggioAcqua"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="https://schema.org/logo#data"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -416,6 +416,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://schema.org/logo#P600+"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://dbpedia.org/ontology/Territory"/>
@@ -1355,14 +1358,14 @@
         <Literal>molto umido</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#drenaggio"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
+        <Literal>perm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CS1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS1"/>
-        <Literal>permeabile</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -1385,11 +1388,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS10"/>
-        <Literal>ben drenato</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CS10"/>
         <Literal>media</Literal>
@@ -1410,11 +1408,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS11"/>
-        <Literal>ben drenato</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CS11"/>
         <Literal>media</Literal>
@@ -1435,11 +1428,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1400</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
-        <Literal>impermeabile</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CS12"/>
         <Literal>media</Literal>
@@ -1450,14 +1438,14 @@
         <Literal>media</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="https://schema.org/logo#tessitura"/>
+        <NamedIndividual IRI="https://schema.org/logo#CS12"/>
+        <Literal>terreno argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CS2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1400</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS2"/>
-        <Literal>permeabile</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -1480,11 +1468,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2600</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS3"/>
-        <Literal>impermeabile</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CS3"/>
         <Literal>alta</Literal>
@@ -1503,11 +1486,6 @@
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CS4"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS4"/>
-        <Literal>impermeabile</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -1530,11 +1508,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS5"/>
-        <Literal>ben drenato</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CS5"/>
         <Literal>alta</Literal>
@@ -1553,11 +1526,6 @@
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CS6"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS6"/>
-        <Literal>ben drenato</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -1580,11 +1548,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS7"/>
-        <Literal>ben drenato</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CS7"/>
         <Literal>alta</Literal>
@@ -1603,11 +1566,6 @@
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CS8"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1500</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS8"/>
-        <Literal>permeabile</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -1630,11 +1588,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CS9"/>
-        <Literal>permeabile</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CS9"/>
         <Literal>media</Literal>
@@ -1653,11 +1606,6 @@
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CSAnzio1"/>
-        <Literal>ben drenato</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -1680,11 +1628,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
-        <Literal>permeabile</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CSAnzio2"/>
         <Literal>bassa</Literal>
@@ -1705,11 +1648,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
-        <Literal>permeabile</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CSFirenze1"/>
         <Literal>media</Literal>
@@ -1728,11 +1666,6 @@
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CSFirenze2"/>
-        <Literal>permeabile</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -1755,11 +1688,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
-        <Literal>ben drenato</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
         <NamedIndividual IRI="https://schema.org/logo#CSPompei1"/>
         <Literal>alta</Literal>
@@ -1778,11 +1706,6 @@
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <NamedIndividual IRI="https://schema.org/logo#CSPompei2"/>
-        <Literal>ben drenato</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
@@ -2382,15 +2305,15 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Class IRI="https://schema.org/logo#Territorio"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
+        <DataProperty IRI="#drenaggio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#drenaggioAcqua"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="https://schema.org/logo#data"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -2446,11 +2369,15 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="https://schema.org/logo#altitudine"/>
+        <DataProperty IRI="#drenaggio"/>
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
+        <DataProperty IRI="#drenaggioAcqua"/>
+        <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -2502,20 +2429,16 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <Class IRI="https://schema.org/logo#CaratteristicheSuolo"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#drenaggio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#drenaggioAcqua"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="https://schema.org/logo#altitudine"/>
         <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="https://schema.org/logo#data"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="https://schema.org/logo#drenaggioAcqua"/>
-        <DataOneOf>
-            <Literal>ben drenato</Literal>
-            <Literal>impermeabile</Literal>
-            <Literal>permeabile</Literal>
-        </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="https://schema.org/logo#fertilità"/>
