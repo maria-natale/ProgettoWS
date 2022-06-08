@@ -8,7 +8,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2>
 
+Declaration(Class(<http://dbpedia.org/ontology/Agricolture>))
 Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(<http://dbpedia.org/ontology/Territory>))
 Declaration(Class(:caratteristiche_ambientali))
 Declaration(Class(:caratteristiche_climatiche))
 Declaration(Class(:caratteristiche_del_suolo))
@@ -43,8 +45,78 @@ Declaration(DataProperty(:temperaturaMax))
 Declaration(DataProperty(:temperaturaMin))
 Declaration(DataProperty(:tessitura))
 Declaration(NamedIndividual(:CA1))
+Declaration(NamedIndividual(:CA10))
+Declaration(NamedIndividual(:CA11))
+Declaration(NamedIndividual(:CA2))
+Declaration(NamedIndividual(:CA3))
+Declaration(NamedIndividual(:CA4))
+Declaration(NamedIndividual(:CA5))
+Declaration(NamedIndividual(:CA6))
+Declaration(NamedIndividual(:CA7))
+Declaration(NamedIndividual(:CA8))
+Declaration(NamedIndividual(:CA9))
+Declaration(NamedIndividual(:CAAnzio1))
+Declaration(NamedIndividual(:CAAnzio2))
+Declaration(NamedIndividual(:CAFirenze1))
+Declaration(NamedIndividual(:CAFirenze2))
+Declaration(NamedIndividual(:CAPompei1))
+Declaration(NamedIndividual(:CAPompei2))
 Declaration(NamedIndividual(:CC1))
+Declaration(NamedIndividual(:CC10))
+Declaration(NamedIndividual(:CC11))
+Declaration(NamedIndividual(:CC12))
+Declaration(NamedIndividual(:CC13))
+Declaration(NamedIndividual(:CC14))
+Declaration(NamedIndividual(:CC2))
+Declaration(NamedIndividual(:CC3))
+Declaration(NamedIndividual(:CC4))
+Declaration(NamedIndividual(:CC5))
+Declaration(NamedIndividual(:CC6))
+Declaration(NamedIndividual(:CC7))
+Declaration(NamedIndividual(:CC8))
+Declaration(NamedIndividual(:CC9))
 Declaration(NamedIndividual(:CS1))
+Declaration(NamedIndividual(:CS10))
+Declaration(NamedIndividual(:CS11))
+Declaration(NamedIndividual(:CS12))
+Declaration(NamedIndividual(:CS2))
+Declaration(NamedIndividual(:CS3))
+Declaration(NamedIndividual(:CS4))
+Declaration(NamedIndividual(:CS5))
+Declaration(NamedIndividual(:CS6))
+Declaration(NamedIndividual(:CS7))
+Declaration(NamedIndividual(:CS8))
+Declaration(NamedIndividual(:CS9))
+Declaration(NamedIndividual(:CSAnzio1))
+Declaration(NamedIndividual(:CSAnzio2))
+Declaration(NamedIndividual(:CSFirenze1))
+Declaration(NamedIndividual(:CSFirenze2))
+Declaration(NamedIndividual(:CSPompei1))
+Declaration(NamedIndividual(:CSPompei2))
+Declaration(NamedIndividual(:P100-200))
+Declaration(NamedIndividual(:P200-500))
+Declaration(NamedIndividual(:P300-600))
+Declaration(NamedIndividual(:P400-500))
+Declaration(NamedIndividual(:P400-600))
+Declaration(NamedIndividual(:P400-800))
+Declaration(NamedIndividual(:P400-900))
+Declaration(NamedIndividual(:P50-100))
+Declaration(NamedIndividual(:P50-500))
+Declaration(NamedIndividual(:T1-10))
+Declaration(NamedIndividual(:T1-30))
+Declaration(NamedIndividual(:T10-20))
+Declaration(NamedIndividual(:T10-25))
+Declaration(NamedIndividual(:T10-32))
+Declaration(NamedIndividual(:T13-25))
+Declaration(NamedIndividual(:T14-23))
+Declaration(NamedIndividual(:T15-24))
+Declaration(NamedIndividual(:T16-18))
+Declaration(NamedIndividual(:T16-24))
+Declaration(NamedIndividual(:T18-30))
+Declaration(NamedIndividual(:T20-25))
+Declaration(NamedIndividual(:T5-24))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>))
+
 ############################
 #   Object Properties
 ############################
@@ -182,9 +254,58 @@ SubDataPropertyOf(:tessitura owl:topDataProperty)
 #   Classes
 ############################
 
-# Class: :caratteristiche_ambientali (:caratteristiche_ambientali)
+# Class: <http://dbpedia.org/ontology/Territory> (<http://dbpedia.org/ontology/Territory>)
 
+EquivalentClasses(<http://dbpedia.org/ontology/Territory> :territorio)
+
+# Class: :caratteristiche_ambientali (caratteristiche ambientali)
+
+AnnotationAssertion(rdfs:comment :caratteristiche_ambientali "Le caratteristiche ambientali specificano particolari condizioni climatiche e del suolo"@it)
+AnnotationAssertion(rdfs:label :caratteristiche_ambientali "caratteristiche ambientali"@it)
+AnnotationAssertion(rdfs:label :caratteristiche_ambientali "environmental features"@en)
 DisjointUnion(:caratteristiche_ambientali :caratteristiche_climatiche :caratteristiche_del_suolo)
+
+# Class: :caratteristiche_climatiche (caratteristiche climatiche)
+
+AnnotationAssertion(rdfs:comment :caratteristiche_climatiche "Le caratteristiche climatiche specificano le temperature, il grado di umidità e la quantità di precipitazioni che caratterizzano l'ambiente."@it)
+AnnotationAssertion(rdfs:label :caratteristiche_climatiche "caratteristiche climatiche"@it)
+AnnotationAssertion(rdfs:label :caratteristiche_climatiche "climatic features"@en)
+
+# Class: :caratteristiche_del_suolo (caratteristiche del suolo)
+
+AnnotationAssertion(rdfs:comment :caratteristiche_del_suolo "Le caratteristiche del suolo specificano altitudine, pendenza, il grado di assorbimento di acqua, la tessitura e la fertilità di un particolare terreno."@it)
+AnnotationAssertion(rdfs:label :caratteristiche_del_suolo "caratteristiche del suolo"@it)
+AnnotationAssertion(rdfs:label :caratteristiche_del_suolo "land features"@en)
+
+# Class: :coltivazione (colture)
+
+AnnotationAssertion(rdfs:comment :coltivazione "Le piante coltivate sono la fonte primaria di approvvigionamento, dal momento che le droghe hanno in gran parte un'origine vegetale. Oggi, le piante spontanee sono state soppiantate da quelle coltivate, sostanzialmente per ragioni di mercato. Le piante coltivate risentono delle caratteristiche ambientali e, per tale ragione, ognuna di esse ha associate delle specifiche caratteristiche ideali."@it)
+AnnotationAssertion(rdfs:label :coltivazione "coltivazione"@it)
+AnnotationAssertion(rdfs:label :coltivazione "colture"@en)
+AnnotationAssertion(rdfs:seeAlso :coltivazione <http://dbpedia.org/ontology/Agricolture>)
+
+# Class: :precipitazioni (precipitazioni)
+
+AnnotationAssertion(rdfs:comment :precipitazioni "Le precipitazioni definiscono i mm di pioggia minimi annui e i mm di pioggia massimi."@it)
+AnnotationAssertion(rdfs:label :precipitazioni "precipitation"@en)
+AnnotationAssertion(rdfs:label :precipitazioni "precipitazioni"@it)
+
+# Class: :temperatura (temperatura)
+
+AnnotationAssertion(rdfs:comment :temperatura "La temperatura è caratterizzata da temperatura minima e massima."@it)
+AnnotationAssertion(rdfs:label :temperatura "temperatura"@it)
+AnnotationAssertion(rdfs:label :temperatura "temperature"@en)
+
+# Class: :terreno_coltivato (terreno coltivato)
+
+AnnotationAssertion(rdfs:comment :terreno_coltivato "Specifica in quale territorio una certa coltivazione viene coltivata"@it)
+AnnotationAssertion(rdfs:label :terreno_coltivato "terreno coltivato"@it)
+
+# Class: :territorio (territory)
+
+AnnotationAssertion(rdfs:comment :territorio "Un territorio è un'area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo."@it)
+AnnotationAssertion(rdfs:label :territorio "territorio"@it)
+AnnotationAssertion(rdfs:label :territorio "territory"@en)
 
 
 ############################
@@ -197,14 +318,498 @@ ClassAssertion(:caratteristiche_ambientali :CA1)
 ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA1 :CC1)
 ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA1 :CS1)
 
+# Individual: :CA10 (:CA10)
+
+ClassAssertion(:caratteristiche_ambientali :CA10)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA10 :CC13)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA10 :CS10)
+
+# Individual: :CA11 (:CA11)
+
+ClassAssertion(:caratteristiche_ambientali :CA11)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA11 :CC10)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA11 :CS1)
+
+# Individual: :CA2 (:CA2)
+
+ClassAssertion(:caratteristiche_ambientali :CA2)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA2 :CC2)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA2 :CS2)
+
+# Individual: :CA3 (:CA3)
+
+ClassAssertion(:caratteristiche_ambientali :CA3)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA3 :CC3)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA3 :CS3)
+
+# Individual: :CA4 (:CA4)
+
+ClassAssertion(:caratteristiche_ambientali :CA4)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA4 :CC3)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA4 :CS5)
+
+# Individual: :CA5 (:CA5)
+
+ClassAssertion(:caratteristiche_ambientali :CA5)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA5 :CC4)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA5 :CS5)
+
+# Individual: :CA6 (:CA6)
+
+ClassAssertion(:caratteristiche_ambientali :CA6)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA6 :CC4)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA6 :CS6)
+
+# Individual: :CA7 (:CA7)
+
+ClassAssertion(:caratteristiche_ambientali :CA7)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA7 :CC7)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA7 :CS7)
+
+# Individual: :CA8 (:CA8)
+
+ClassAssertion(:caratteristiche_ambientali :CA8)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA8 :CC7)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA8 :CS8)
+
+# Individual: :CA9 (:CA9)
+
+ClassAssertion(:caratteristiche_ambientali :CA9)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CA9 :CC8)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CA9 :CS9)
+
+# Individual: :CAAnzio1 (:CAAnzio1)
+
+ClassAssertion(:caratteristiche_ambientali :CAAnzio1)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CAAnzio1 :CC7)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CAAnzio1 :CSAnzio1)
+
+# Individual: :CAAnzio2 (:CAAnzio2)
+
+ClassAssertion(:caratteristiche_ambientali :CAAnzio2)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CAAnzio2 :CC7)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CAAnzio2 :CSAnzio2)
+
+# Individual: :CAFirenze1 (:CAFirenze1)
+
+ClassAssertion(:caratteristiche_ambientali :CAFirenze1)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CAFirenze1 :CC10)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CAFirenze1 :CSFirenze1)
+
+# Individual: :CAFirenze2 (:CAFirenze2)
+
+ClassAssertion(:caratteristiche_ambientali :CAFirenze2)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CAFirenze2 :CC10)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CAFirenze2 :CSFirenze2)
+
+# Individual: :CAPompei1 (:CAPompei1)
+
+ClassAssertion(:caratteristiche_ambientali :CAPompei1)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CAPompei1 :CC4)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CAPompei1 :CSPompei1)
+
+# Individual: :CAPompei2 (:CAPompei2)
+
+ClassAssertion(:caratteristiche_ambientali :CAPompei2)
+ObjectPropertyAssertion(:ha_caratteristiche_climatiche :CAPompei2 :CC4)
+ObjectPropertyAssertion(:ha_caratteristiche_suolo :CAPompei2 :CSPompei2)
+
 # Individual: :CC1 (:CC1)
 
 ClassAssertion(:caratteristiche_climatiche :CC1)
+ObjectPropertyAssertion(:ha_precipitazioni :CC1 :P300-600)
+ObjectPropertyAssertion(:ha_temperatura :CC1 :T1-10)
+DataPropertyAssertion(:gradoUmidità :CC1 "moltoUmido"^^xsd:string)
+
+# Individual: :CC10 (:CC10)
+
+ClassAssertion(:caratteristiche_climatiche :CC10)
+ObjectPropertyAssertion(:ha_precipitazioni :CC10 :P300-600)
+ObjectPropertyAssertion(:ha_temperatura :CC10 :T16-18)
+DataPropertyAssertion(:gradoUmidità :CC10 "moltoUmido"^^xsd:string)
+
+# Individual: :CC11 (:CC11)
+
+ClassAssertion(:caratteristiche_climatiche :CC11)
+ObjectPropertyAssertion(:ha_precipitazioni :CC11 :P400-900)
+ObjectPropertyAssertion(:ha_temperatura :CC11 :T20-25)
+DataPropertyAssertion(:gradoUmidità :CC11 "arido"^^xsd:string)
+
+# Individual: :CC12 (:CC12)
+
+ClassAssertion(:caratteristiche_climatiche :CC12)
+ObjectPropertyAssertion(:ha_precipitazioni :CC12 :P200-500)
+ObjectPropertyAssertion(:ha_temperatura :CC12 :T10-25)
+DataPropertyAssertion(:gradoUmidità :CC12 "secco"^^xsd:string)
+
+# Individual: :CC13 (:CC13)
+
+ClassAssertion(:caratteristiche_climatiche :CC13)
+ObjectPropertyAssertion(:ha_precipitazioni :CC13 :P400-500)
+ObjectPropertyAssertion(:ha_temperatura :CC13 :T14-23)
+DataPropertyAssertion(:gradoUmidità :CC13 "umido"^^xsd:string)
+
+# Individual: :CC14 (:CC14)
+
+ClassAssertion(:caratteristiche_climatiche :CC14)
+ObjectPropertyAssertion(:ha_precipitazioni :CC14 :P400-800)
+ObjectPropertyAssertion(:ha_temperatura :CC14 :T15-24)
+DataPropertyAssertion(:gradoUmidità :CC14 "arido"^^xsd:string)
+
+# Individual: :CC2 (:CC2)
+
+ClassAssertion(:caratteristiche_climatiche :CC2)
+ObjectPropertyAssertion(:ha_precipitazioni :CC2 :P400-900)
+ObjectPropertyAssertion(:ha_temperatura :CC2 :T1-30)
+DataPropertyAssertion(:gradoUmidità :CC2 "arido"^^xsd:string)
+
+# Individual: :CC3 (:CC3)
+
+ClassAssertion(:caratteristiche_climatiche :CC3)
+ObjectPropertyAssertion(:ha_precipitazioni :CC3 <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>)
+ObjectPropertyAssertion(:ha_temperatura :CC3 :T13-25)
+DataPropertyAssertion(:gradoUmidità :CC3 "umido"^^xsd:string)
+
+# Individual: :CC4 (:CC4)
+
+ClassAssertion(:caratteristiche_climatiche :CC4)
+ObjectPropertyAssertion(:ha_precipitazioni :CC4 :P50-100)
+ObjectPropertyAssertion(:ha_temperatura :CC4 :T10-32)
+DataPropertyAssertion(:gradoUmidità :CC4 "umido"^^xsd:string)
+
+# Individual: :CC5 (:CC5)
+
+ClassAssertion(:caratteristiche_climatiche :CC5)
+ObjectPropertyAssertion(:ha_precipitazioni :CC5 :P100-200)
+ObjectPropertyAssertion(:ha_temperatura :CC5 :T16-24)
+DataPropertyAssertion(:gradoUmidità :CC5 "arido"^^xsd:string)
+
+# Individual: :CC6 (:CC6)
+
+ClassAssertion(:caratteristiche_climatiche :CC6)
+ObjectPropertyAssertion(:ha_precipitazioni :CC6 :P300-600)
+ObjectPropertyAssertion(:ha_temperatura :CC6 :T5-24)
+DataPropertyAssertion(:gradoUmidità :CC6 "secco"^^xsd:string)
+
+# Individual: :CC7 (:CC7)
+
+ClassAssertion(:caratteristiche_climatiche :CC7)
+ObjectPropertyAssertion(:ha_precipitazioni :CC7 :P50-100)
+ObjectPropertyAssertion(:ha_temperatura :CC7 :T10-25)
+DataPropertyAssertion(:gradoUmidità :CC7 "umido"^^xsd:string)
+
+# Individual: :CC8 (:CC8)
+
+ClassAssertion(:caratteristiche_climatiche :CC8)
+ObjectPropertyAssertion(:ha_precipitazioni :CC8 :P400-600)
+ObjectPropertyAssertion(:ha_temperatura :CC8 :T1-30)
+
+# Individual: :CC9 (:CC9)
+
+ClassAssertion(:caratteristiche_climatiche :CC9)
+ObjectPropertyAssertion(:ha_precipitazioni :CC9 :P50-500)
+ObjectPropertyAssertion(:ha_temperatura :CC9 :T18-30)
+DataPropertyAssertion(:gradoUmidità :CC9 "moltoUmido"^^xsd:string)
 
 # Individual: :CS1 (:CS1)
 
 ClassAssertion(:caratteristiche_del_suolo :CS1)
+DataPropertyAssertion(:altitudine :CS1 "1000"^^xsd:int)
 DataPropertyAssertion(:drenaggio :CS1 "permeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS1 "media"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS1 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS1 "argilloso"^^xsd:string)
+
+# Individual: :CS10 (:CS10)
+
+ClassAssertion(:caratteristiche_del_suolo :CS10)
+DataPropertyAssertion(:altitudine :CS10 "600"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS10 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS10 "media"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS10 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS10 "argilloso"^^xsd:string)
+
+# Individual: :CS11 (:CS11)
+
+ClassAssertion(:caratteristiche_del_suolo :CS11)
+DataPropertyAssertion(:altitudine :CS11 "1000"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS11 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS11 "media"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS11 "media"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS11 "argilloso"^^xsd:string)
+
+# Individual: :CS12 (:CS12)
+
+ClassAssertion(:caratteristiche_del_suolo :CS12)
+DataPropertyAssertion(:altitudine :CS12 "1400"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS12 "impermeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS12 "media"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS12 "media"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS12 "sassoso"^^xsd:string)
+
+# Individual: :CS2 (:CS2)
+
+ClassAssertion(:caratteristiche_del_suolo :CS2)
+DataPropertyAssertion(:altitudine :CS2 "1400"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS2 "permeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS2 "media"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS2 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS2 "argilloso"^^xsd:string)
+
+# Individual: :CS3 (:CS3)
+
+ClassAssertion(:caratteristiche_del_suolo :CS3)
+DataPropertyAssertion(:altitudine :CS3 "2600"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS3 "impermeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS3 "alta"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS3 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS3 "sassoso"^^xsd:string)
+
+# Individual: :CS4 (:CS4)
+
+ClassAssertion(:caratteristiche_del_suolo :CS4)
+DataPropertyAssertion(:altitudine :CS4 "1000"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS4 "impermeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS4 "alta"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS4 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS4 "fosforoso"^^xsd:string)
+
+# Individual: :CS5 (:CS5)
+
+ClassAssertion(:caratteristiche_del_suolo :CS5)
+DataPropertyAssertion(:altitudine :CS5 "600"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS5 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS5 "alta"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS5 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS5 "argilloso"^^xsd:string)
+
+# Individual: :CS6 (:CS6)
+
+ClassAssertion(:caratteristiche_del_suolo :CS6)
+DataPropertyAssertion(:altitudine :CS6 "1000"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS6 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS6 "bassa"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS6 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS6 "sassoso"^^xsd:string)
+
+# Individual: :CS7 (:CS7)
+
+ClassAssertion(:caratteristiche_del_suolo :CS7)
+DataPropertyAssertion(:altitudine :CS7 "1500"^^xsd:int)
+DataPropertyAssertion(:altitudine :CS7 "2000"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS7 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS7 "alta"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS7 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS7 "fosforoso"^^xsd:string)
+
+# Individual: :CS8 (:CS8)
+
+ClassAssertion(:caratteristiche_del_suolo :CS8)
+DataPropertyAssertion(:drenaggio :CS8 "permeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS8 "bassa"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS8 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS8 "sabbioso"^^xsd:string)
+
+# Individual: :CS9 (:CS9)
+
+ClassAssertion(:caratteristiche_del_suolo :CS9)
+DataPropertyAssertion(:altitudine :CS9 "1000"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CS9 "permeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CS9 "media"^^xsd:string)
+DataPropertyAssertion(:pendenza :CS9 "media"^^xsd:string)
+DataPropertyAssertion(:tessitura :CS9 "sabbioso"^^xsd:string)
+
+# Individual: :CSAnzio1 (:CSAnzio1)
+
+ClassAssertion(:caratteristiche_del_suolo :CSAnzio1)
+DataPropertyAssertion(:altitudine :CSAnzio1 "10"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CSAnzio1 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CSAnzio1 "alta"^^xsd:string)
+DataPropertyAssertion(:pendenza :CSAnzio1 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CSAnzio1 "fosforoso"^^xsd:string)
+
+# Individual: :CSAnzio2 (:CSAnzio2)
+
+ClassAssertion(:caratteristiche_del_suolo :CSAnzio2)
+DataPropertyAssertion(:altitudine :CSAnzio2 "10"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CSAnzio2 "permeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CSAnzio2 "bassa"^^xsd:string)
+DataPropertyAssertion(:pendenza :CSAnzio2 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CSAnzio2 "sabbioso"^^xsd:string)
+
+# Individual: :CSFirenze1 (:CSFirenze1)
+
+ClassAssertion(:caratteristiche_del_suolo :CSFirenze1)
+DataPropertyAssertion(:altitudine :CSFirenze1 "50"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CSFirenze1 "permeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CSFirenze1 "media"^^xsd:string)
+DataPropertyAssertion(:pendenza :CSFirenze1 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CSFirenze1 "argilloso"^^xsd:string)
+
+# Individual: :CSFirenze2 (:CSFirenze2)
+
+ClassAssertion(:caratteristiche_del_suolo :CSFirenze2)
+DataPropertyAssertion(:altitudine :CSFirenze2 "50"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CSFirenze2 "permeabile"^^xsd:string)
+DataPropertyAssertion(:fertilità :CSFirenze2 "alta"^^xsd:string)
+DataPropertyAssertion(:pendenza :CSFirenze2 "media"^^xsd:string)
+DataPropertyAssertion(:tessitura :CSFirenze2 "argilloso"^^xsd:string)
+
+# Individual: :CSPompei1 (:CSPompei1)
+
+ClassAssertion(:caratteristiche_del_suolo :CSPompei1)
+DataPropertyAssertion(:altitudine :CSPompei1 "14"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CSPompei1 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CSPompei1 "alta"^^xsd:string)
+DataPropertyAssertion(:pendenza :CSPompei1 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CSPompei1 "argilloso"^^xsd:string)
+
+# Individual: :CSPompei2 (:CSPompei2)
+
+ClassAssertion(:caratteristiche_del_suolo :CSPompei2)
+DataPropertyAssertion(:altitudine :CSPompei2 "20"^^xsd:int)
+DataPropertyAssertion(:drenaggio :CSPompei2 "benDrenato"^^xsd:string)
+DataPropertyAssertion(:fertilità :CSPompei2 "bassa"^^xsd:string)
+DataPropertyAssertion(:pendenza :CSPompei2 "bassa"^^xsd:string)
+DataPropertyAssertion(:tessitura :CSPompei2 "sassoso"^^xsd:string)
+
+# Individual: :P100-200 (:P100-200)
+
+ClassAssertion(:precipitazioni :P100-200)
+DataPropertyAssertion(:precipitazioniMax :P100-200 "200"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P100-200 "100"^^xsd:int)
+
+# Individual: :P200-500 (:P200-500)
+
+ClassAssertion(:precipitazioni :P200-500)
+DataPropertyAssertion(:precipitazioniMax :P200-500 "500"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P200-500 "200"^^xsd:int)
+
+# Individual: :P300-600 (:P300-600)
+
+ClassAssertion(:precipitazioni :P300-600)
+DataPropertyAssertion(:precipitazioniMax :P300-600 "600"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P300-600 "300"^^xsd:int)
+
+# Individual: :P400-500 (:P400-500)
+
+ClassAssertion(:precipitazioni :P400-500)
+DataPropertyAssertion(:precipitazioniMax :P400-500 "500"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P400-500 "400"^^xsd:int)
+
+# Individual: :P400-600 (:P400-600)
+
+ClassAssertion(:precipitazioni :P400-600)
+DataPropertyAssertion(:precipitazioniMax :P400-600 "600"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P400-600 "400"^^xsd:int)
+
+# Individual: :P400-800 (:P400-800)
+
+ClassAssertion(:precipitazioni :P400-800)
+DataPropertyAssertion(:precipitazioniMax :P400-800 "800"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P400-800 "400"^^xsd:int)
+
+# Individual: :P400-900 (:P400-900)
+
+ClassAssertion(:precipitazioni :P400-900)
+DataPropertyAssertion(:precipitazioniMax :P400-900 "900"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P400-900 "400"^^xsd:int)
+
+# Individual: :P50-100 (:P50-100)
+
+ClassAssertion(:precipitazioni :P50-100)
+DataPropertyAssertion(:gradoUmidità :P50-100 "umido"^^xsd:string)
+DataPropertyAssertion(:precipitazioniMax :P50-100 "100"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P50-100 "50"^^xsd:int)
+
+# Individual: :P50-500 (:P50-500)
+
+ClassAssertion(:precipitazioni :P50-500)
+DataPropertyAssertion(:precipitazioniMax :P50-500 "500"^^xsd:int)
+DataPropertyAssertion(:precipitazioniMin :P50-500 "50"^^xsd:int)
+
+# Individual: :T1-10 (:T1-10)
+
+ClassAssertion(:temperatura :T1-10)
+DataPropertyAssertion(:temperaturaMax :T1-10 "10"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T1-10 "1"^^xsd:int)
+
+# Individual: :T1-30 (:T1-30)
+
+ClassAssertion(:temperatura :T1-30)
+DataPropertyAssertion(:temperaturaMax :T1-30 "30"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T1-30 "1"^^xsd:int)
+
+# Individual: :T10-20 (:T10-20)
+
+ClassAssertion(:temperatura :T10-20)
+DataPropertyAssertion(:temperaturaMax :T10-20 "20"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T10-20 "10"^^xsd:int)
+
+# Individual: :T10-25 (:T10-25)
+
+ClassAssertion(:temperatura :T10-25)
+DataPropertyAssertion(:temperaturaMax :T10-25 "25"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T10-25 "10"^^xsd:int)
+
+# Individual: :T10-32 (:T10-32)
+
+ClassAssertion(:temperatura :T10-32)
+DataPropertyAssertion(:temperaturaMax :T10-32 "32"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T10-32 "10"^^xsd:int)
+
+# Individual: :T13-25 (:T13-25)
+
+ClassAssertion(:temperatura :T13-25)
+DataPropertyAssertion(:temperaturaMax :T13-25 "25"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T13-25 "13"^^xsd:int)
+
+# Individual: :T14-23 (:T14-23)
+
+ClassAssertion(:temperatura :T14-23)
+DataPropertyAssertion(:temperaturaMax :T14-23 "23"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T14-23 "14"^^xsd:int)
+
+# Individual: :T15-24 (:T15-24)
+
+ClassAssertion(:temperatura :T15-24)
+DataPropertyAssertion(:temperaturaMax :T15-24 "24"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T15-24 "15"^^xsd:int)
+
+# Individual: :T16-18 (:T16-18)
+
+ClassAssertion(:temperatura :T16-18)
+DataPropertyAssertion(:temperaturaMax :T16-18 "18"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T16-18 "16"^^xsd:int)
+
+# Individual: :T16-24 (:T16-24)
+
+ClassAssertion(:temperatura :T16-24)
+DataPropertyAssertion(:temperaturaMax :T16-24 "24"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T16-24 "16"^^xsd:int)
+
+# Individual: :T18-30 (:T18-30)
+
+ClassAssertion(:temperatura :T18-30)
+DataPropertyAssertion(:temperaturaMax :T18-30 "30"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T18-30 "18"^^xsd:int)
+
+# Individual: :T20-25 (:T20-25)
+
+ClassAssertion(:temperatura :T20-25)
+DataPropertyAssertion(:temperaturaMax :T20-25 "25"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T20-25 "20"^^xsd:int)
+
+# Individual: :T5-24 (:T5-24)
+
+ClassAssertion(:temperatura :T5-24)
+DataPropertyAssertion(:temperaturaMax :T5-24 "24"^^xsd:int)
+DataPropertyAssertion(:temperaturaMin :T5-24 "5"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>)
+
+ClassAssertion(:precipitazioni <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>)
+DataPropertyAssertion(:precipitazioniMin <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+> "600"^^xsd:int)
 
 
 )
