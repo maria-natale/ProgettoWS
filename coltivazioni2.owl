@@ -44,6 +44,9 @@ Declaration(DataProperty(:precipitazioniMin))
 Declaration(DataProperty(:temperaturaMax))
 Declaration(DataProperty(:temperaturaMin))
 Declaration(DataProperty(:tessitura))
+Declaration(NamedIndividual(<http://dbpedia.org/resource/Anzio>))
+Declaration(NamedIndividual(<http://dbpedia.org/resource/Florence>))
+Declaration(NamedIndividual(<http://dbpedia.org/resource/Pompei>))
 Declaration(NamedIndividual(:CA1))
 Declaration(NamedIndividual(:CA10))
 Declaration(NamedIndividual(:CA11))
@@ -115,6 +118,27 @@ Declaration(NamedIndividual(:T16-24))
 Declaration(NamedIndividual(:T18-30))
 Declaration(NamedIndividual(:T20-25))
 Declaration(NamedIndividual(:T5-24))
+Declaration(NamedIndividual(:TerrColAnzio1))
+Declaration(NamedIndividual(:TerrColAnzio2))
+Declaration(NamedIndividual(:TerrColFirenze1))
+Declaration(NamedIndividual(:TerritorioAnzio1))
+Declaration(NamedIndividual(:TerritorioAnzio2))
+Declaration(NamedIndividual(:TerritorioFirenze1))
+Declaration(NamedIndividual(:TerritorioFirenze2))
+Declaration(NamedIndividual(:TerritorioFirenze3))
+Declaration(NamedIndividual(:TerritorioPompei1))
+Declaration(NamedIndividual(:TerritorioPompei2))
+Declaration(NamedIndividual(:avena))
+Declaration(NamedIndividual(:grano_duro))
+Declaration(NamedIndividual(:grano_tenero))
+Declaration(NamedIndividual(:lino))
+Declaration(NamedIndividual(:mais))
+Declaration(NamedIndividual(:miglio))
+Declaration(NamedIndividual(:orzo))
+Declaration(NamedIndividual(:riso_indica))
+Declaration(NamedIndividual(:riso_japonica))
+Declaration(NamedIndividual(:segale))
+Declaration(NamedIndividual(:vite))
 Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>))
 
 ############################
@@ -311,6 +335,18 @@ AnnotationAssertion(rdfs:label :territorio "territory"@en)
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://dbpedia.org/resource/Anzio> (<http://dbpedia.org/resource/Anzio>)
+
+ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Anzio>)
+
+# Individual: <http://dbpedia.org/resource/Florence> (<http://dbpedia.org/resource/Florence>)
+
+ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Florence>)
+
+# Individual: <http://dbpedia.org/resource/Pompei> (<http://dbpedia.org/resource/Pompei>)
+
+ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Pompei>)
 
 # Individual: :CA1 (:CA1)
 
@@ -805,6 +841,170 @@ DataPropertyAssertion(:temperaturaMin :T20-25 "20"^^xsd:int)
 ClassAssertion(:temperatura :T5-24)
 DataPropertyAssertion(:temperaturaMax :T5-24 "24"^^xsd:int)
 DataPropertyAssertion(:temperaturaMin :T5-24 "5"^^xsd:int)
+
+# Individual: :TerrColAnzio1 (:TerrColAnzio1)
+
+ClassAssertion(:terreno_coltivato :TerrColAnzio1)
+ObjectPropertyAssertion(:ha_coltura :TerrColAnzio1 :orzo)
+ObjectPropertyAssertion(:ha_territorio :TerrColAnzio1 :TerritorioAnzio1)
+
+# Individual: :TerrColAnzio2 (:TerrColAnzio2)
+
+ClassAssertion(:terreno_coltivato :TerrColAnzio2)
+ObjectPropertyAssertion(:ha_coltura :TerrColAnzio2 :avena)
+ObjectPropertyAssertion(:ha_territorio :TerrColAnzio2 :TerritorioAnzio2)
+
+# Individual: :TerrColFirenze1 (:TerrColFirenze1)
+
+ClassAssertion(:terreno_coltivato :TerrColFirenze1)
+ObjectPropertyAssertion(:ha_coltura :TerrColFirenze1 :lino)
+ObjectPropertyAssertion(:ha_territorio :TerrColFirenze1 :TerritorioFirenze1)
+
+# Individual: :TerritorioAnzio1 (:TerritorioAnzio1)
+
+ClassAssertion(:territorio :TerritorioAnzio1)
+ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio1 <http://dbpedia.org/resource/Anzio>)
+ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioAnzio1 :CAAnzio1)
+DataPropertyAssertion(:latitudine :TerritorioAnzio1 "41.449165"^^xsd:float)
+DataPropertyAssertion(:longitudine :TerritorioAnzio1 "12.619278"^^xsd:float)
+
+# Individual: :TerritorioAnzio2 (:TerritorioAnzio2)
+
+ClassAssertion(:territorio :TerritorioAnzio2)
+ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio2 <http://dbpedia.org/resource/Anzio>)
+ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioAnzio2 :CAAnzio2)
+DataPropertyAssertion(:latitudine :TerritorioAnzio2 "12.623324"^^xsd:float)
+DataPropertyAssertion(:latitudine :TerritorioAnzio2 "41.44941"^^xsd:float)
+
+# Individual: :TerritorioFirenze1 (:TerritorioFirenze1)
+
+ClassAssertion(:territorio :TerritorioFirenze1)
+ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze1 <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze1 :CAFirenze1)
+DataPropertyAssertion(:latitudine :TerritorioFirenze1 "43.761185"^^xsd:float)
+DataPropertyAssertion(:longitudine :TerritorioFirenze1 "11.253094"^^xsd:float)
+
+# Individual: :TerritorioFirenze2 (:TerritorioFirenze2)
+
+ClassAssertion(:territorio :TerritorioFirenze2)
+ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze2 <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze2 :CAFirenze1)
+DataPropertyAssertion(:latitudine :TerritorioFirenze2 "43.74982"^^xsd:float)
+DataPropertyAssertion(:longitudine :TerritorioFirenze2 "11.270858"^^xsd:float)
+
+# Individual: :TerritorioFirenze3 (:TerritorioFirenze3)
+
+ClassAssertion(:territorio :TerritorioFirenze3)
+ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze3 <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze3 :CAFirenze2)
+DataPropertyAssertion(:latitudine :TerritorioFirenze3 "43.74914"^^xsd:float)
+DataPropertyAssertion(:longitudine :TerritorioFirenze3 "11.272683"^^xsd:float)
+
+# Individual: :TerritorioPompei1 (:TerritorioPompei1)
+
+ClassAssertion(:territorio :TerritorioPompei1)
+ObjectPropertyAssertion(:ha_locazione :TerritorioPompei1 <http://dbpedia.org/resource/Pompei>)
+ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioPompei1 :CAPompei1)
+DataPropertyAssertion(:latitudine :TerritorioPompei1 "40.728935"^^xsd:float)
+DataPropertyAssertion(:longitudine :TerritorioPompei1 "14.518529"^^xsd:float)
+
+# Individual: :TerritorioPompei2 (:TerritorioPompei2)
+
+ClassAssertion(:territorio :TerritorioPompei2)
+ObjectPropertyAssertion(:ha_locazione :TerritorioPompei2 <http://dbpedia.org/resource/Pompei>)
+ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioPompei2 :CAPompei2)
+DataPropertyAssertion(:latitudine :TerritorioPompei2 "40.74174"^^xsd:float)
+DataPropertyAssertion(:longitudine :TerritorioPompei2 "14.509317"^^xsd:float)
+
+# Individual: :avena (:avena)
+
+ClassAssertion(:coltivazione :avena)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :avena :CA8)
+DataPropertyAssertion(:morfologia :avena "La pianta, Avena Sativa, o avena comune, fa parte della famiglia delle graminacee. La pianta dell'avena presenta un fusto cavo e sottile con diverse ramificazioni. Le sue foglie sono allungate. I fiori si sviluppano a gruppi di piccole spighe che producono le cariossidi, dei piccoli frutti secchi ricchi di amido."^^xsd:string)
+DataPropertyAssertion(:nome :avena "Avena"^^xsd:string)
+DataPropertyAssertion(:nomelatino :avena "Avena sativa"^^xsd:string)
+
+# Individual: :grano_duro (:grano_duro)
+
+ClassAssertion(:coltivazione :grano_duro)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :grano_duro :CA2)
+DataPropertyAssertion(:morfologia :grano_duro "L'apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall'embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all'estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell'involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa."^^xsd:string)
+DataPropertyAssertion(:nome :grano_duro "grano duro"^^xsd:string)
+DataPropertyAssertion(:nomelatino :grano_duro "Triticum durum"^^xsd:string)
+
+# Individual: :grano_tenero (:grano_tenero)
+
+ClassAssertion(:coltivazione :grano_tenero)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :grano_tenero :CA1)
+DataPropertyAssertion(:morfologia :grano_tenero "L'apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall'embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all'estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell'involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa."^^xsd:string)
+DataPropertyAssertion(:nome :grano_tenero "Triticum aestivum"^^xsd:string)
+DataPropertyAssertion(:nome :grano_tenero "grano tenero"^^xsd:string)
+
+# Individual: :lino (:lino)
+
+ClassAssertion(:coltivazione :lino)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :lino :CA11)
+DataPropertyAssertion(:morfologia :lino "Il filamento di lino è in media lungo 50 cm ed è costituito da fibrille lunghe circa 30 mm. La fibra ha un diametro apparente di 15-18 µ ed ha un aspetto cilindrico a sezione poligonale con un canale centrale molto più piccolo che nel cotone."^^xsd:string)
+DataPropertyAssertion(:nome :lino "Lino"^^xsd:string)
+DataPropertyAssertion(:nomelatino :lino "Linum usitatissimum"^^xsd:string)
+
+# Individual: :mais (:mais)
+
+ClassAssertion(:coltivazione :mais)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :mais :CA11)
+DataPropertyAssertion(:morfologia :mais "La pianta presenta molte caratteristiche comuni alle altre Poaceae: il fusto o culmo (comunemente chiamato “stocco”) distinto in nodi e internodi; una singola foglia a ciascun nodo e le foglie distribuite sul culmo in due file opposte o distiche; ogni foglia consiste in una lamina espansa collegata a una guaina che avvolge il culmo. I nodi basali hanno la tendenza a formare ramificazioni o culmi di accestimento (polloni) e sviluppano radici avventizie."^^xsd:string)
+DataPropertyAssertion(:nome :mais "Mais"^^xsd:string)
+DataPropertyAssertion(:nomelatino :mais "Zea mays"^^xsd:string)
+
+# Individual: :miglio (:miglio)
+
+ClassAssertion(:coltivazione :miglio)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :miglio :CA10)
+DataPropertyAssertion(:morfologia :miglio "L'altezza della pianta può variare da 0,6 a 1,2 m, la spiga da 3 a 13 cm. I semi possono essere bianchi, giallognoli, bruni, verdi, blu ardesia o rossi. Il peso dei 1000 semi è mediamente di 2,6 g."^^xsd:string)
+DataPropertyAssertion(:nome :miglio "Miglio"^^xsd:string)
+DataPropertyAssertion(:nomelatino :miglio "Panicum miliaceum"^^xsd:string)
+
+# Individual: :orzo (:orzo)
+
+ClassAssertion(:coltivazione :orzo)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :orzo :CA7)
+DataPropertyAssertion(:morfologia :orzo "Il corredo cromosomico dell'orzo è 2n = 14. Il culmo è cilindrico, cavo formato da 5-8 internodi; l'altezza può superare i 100 cm. Alterne, distiche; lamina lanceolata con superficie cerosa, la ligula è molto ridotta e le auricole sono glabre, molto sviluppate tanto da sovrapporsi e abbracciare il culmo."^^xsd:string)
+DataPropertyAssertion(:nome :orzo "Orzo"^^xsd:string)
+DataPropertyAssertion(:nomelatino :orzo "Hordeum vulgare"^^xsd:string)
+
+# Individual: :riso_indica (:riso_indica)
+
+ClassAssertion(:coltivazione :riso_indica)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :riso_indica :CA3)
+DataPropertyAssertion(:morfologia :riso_indica "Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento.
+Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose."^^xsd:string)
+DataPropertyAssertion(:nome :riso_indica "Riso Indica"^^xsd:string)
+DataPropertyAssertion(:nomelatino :riso_indica "Oryza sativa"^^xsd:string)
+
+# Individual: :riso_japonica (:riso_japonica)
+
+ClassAssertion(:coltivazione :riso_japonica)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :riso_japonica :CA4)
+DataPropertyAssertion(:morfologia :riso_japonica "Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento. 
+Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose."^^xsd:string)
+DataPropertyAssertion(:nome :riso_japonica "Riso Japonica"^^xsd:string)
+DataPropertyAssertion(:nomelatino :riso_japonica "Oryza sativa subsp. Japonica"^^xsd:string)
+
+# Individual: :segale (:segale)
+
+ClassAssertion(:coltivazione :segale)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :segale :CA9)
+DataPropertyAssertion(:morfologia :segale "La segale presenta dei caratteri botanici simili a quelli del frumento. Da questo si distingue perché la piantina ha una ligula sprovvista delle appendici falciformi abbraccianti il culmo, comuni al frumento e all'orzo, ed inoltre la ligula stessa è corta, dentata a denti brevi e triangolari."^^xsd:string)
+DataPropertyAssertion(:nome :segale "Segale"^^xsd:string)
+DataPropertyAssertion(:nomelatino :segale "Secale cereale"^^xsd:string)
+
+# Individual: :vite (:vite)
+
+ClassAssertion(:coltivazione :vite)
+ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :vite :CA6)
+DataPropertyAssertion(:morfologia :vite "Tutte le gemme della vite sono miste, con formazione di germogli ed infiorescenze. Le foglie, dotate di un lungo picciolo, sono grandi e palmate, con lembo intero o suddiviso in 3-5 lobi, di colore verde più o meno intenso a seconda della varietà, mentre la pagina inferiore è più chiara e può essere ricoperta di peli."^^xsd:string)
+DataPropertyAssertion(:nome :vite "Vite"^^xsd:string)
+DataPropertyAssertion(:nomelatino :vite "Vitis vinifera"^^xsd:string)
 
 # Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>)
 
