@@ -1,0 +1,2671 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni-inferred2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni-inferred2">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/City"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/City"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/City"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Anzio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Pompei"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1"/>
+        <Literal>moltoUmido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10"/>
+        <Literal>moltoUmido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12"/>
+        <Literal>secco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5"/>
+        <Literal>arido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6"/>
+        <Literal>secco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9"/>
+        <Literal>moltoUmido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+        <Literal>impermeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12"/>
+        <Literal>sassoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+        <Literal>impermeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3"/>
+        <Literal>sassoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+        <Literal>impermeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4"/>
+        <Literal>fosforoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6"/>
+        <Literal>sassoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7"/>
+        <Literal>fosforoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8"/>
+        <Literal>sabbioso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9"/>
+        <Literal>sabbioso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1"/>
+        <Literal>fosforoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2"/>
+        <Literal>sabbioso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+        <Literal>permeabile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+        <Literal>media</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+        <Literal>alta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1"/>
+        <Literal>argilloso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+        <Literal>benDrenato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+        <Literal>bassa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2"/>
+        <Literal>sassoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100"/>
+        <Literal>umido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.449165</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.619278</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.44941</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.623324</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.761185</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.253094</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.74982</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.270858</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.74914</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">11.272683</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.728935</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.518529</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.74174</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.509317</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
+        <Literal>La pianta, Avena Sativa, o avena comune, fa parte della famiglia delle graminacee. La pianta dell&apos;avena presenta un fusto cavo e sottile con diverse ramificazioni. Le sue foglie sono allungate. I fiori si sviluppano a gruppi di piccole spighe che producono le cariossidi, dei piccoli frutti secchi ricchi di amido.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
+        <Literal>Avena</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
+        <Literal>Avena sativa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro"/>
+        <Literal>L&apos;apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall&apos;embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all&apos;estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell&apos;involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro"/>
+        <Literal>grano duro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro"/>
+        <Literal>Triticum durum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero"/>
+        <Literal>L&apos;apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall&apos;embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all&apos;estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell&apos;involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero"/>
+        <Literal>Triticum aestivum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero"/>
+        <Literal>grano tenero</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+        <Literal>Il filamento di lino è in media lungo 50 cm ed è costituito da fibrille lunghe circa 30 mm. La fibra ha un diametro apparente di 15-18 µ ed ha un aspetto cilindrico a sezione poligonale con un canale centrale molto più piccolo che nel cotone.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+        <Literal>Lino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
+        <Literal>Linum usitatissimum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+        <Literal>La pianta presenta molte caratteristiche comuni alle altre Poaceae: il fusto o culmo (comunemente chiamato “stocco”) distinto in nodi e internodi; una singola foglia a ciascun nodo e le foglie distribuite sul culmo in due file opposte o distiche; ogni foglia consiste in una lamina espansa collegata a una guaina che avvolge il culmo. I nodi basali hanno la tendenza a formare ramificazioni o culmi di accestimento (polloni) e sviluppano radici avventizie.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+        <Literal>Mais</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
+        <Literal>Zea mays</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio"/>
+        <Literal>L&apos;altezza della pianta può variare da 0,6 a 1,2 m, la spiga da 3 a 13 cm. I semi possono essere bianchi, giallognoli, bruni, verdi, blu ardesia o rossi. Il peso dei 1000 semi è mediamente di 2,6 g.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio"/>
+        <Literal>Miglio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio"/>
+        <Literal>Panicum miliaceum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+        <Literal>Il corredo cromosomico dell&apos;orzo è 2n = 14. Il culmo è cilindrico, cavo formato da 5-8 internodi; l&apos;altezza può superare i 100 cm. Alterne, distiche; lamina lanceolata con superficie cerosa, la ligula è molto ridotta e le auricole sono glabre, molto sviluppate tanto da sovrapporsi e abbracciare il culmo.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+        <Literal>Orzo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
+        <Literal>Hordeum vulgare</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica"/>
+        <Literal>Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento.
+Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica"/>
+        <Literal>Riso Indica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica"/>
+        <Literal>Oryza sativa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica"/>
+        <Literal>Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento. 
+Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica"/>
+        <Literal>Riso Japonica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica"/>
+        <Literal>Oryza sativa subsp. Japonica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale"/>
+        <Literal>La segale presenta dei caratteri botanici simili a quelli del frumento. Da questo si distingue perché la piantina ha una ligula sprovvista delle appendici falciformi abbraccianti il culmo, comuni al frumento e all&apos;orzo, ed inoltre la ligula stessa è corta, dentata a denti brevi e triangolari.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale"/>
+        <Literal>Segale</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale"/>
+        <Literal>Secale cereale</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
+        <Literal>Tutte le gemme della vite sono miste, con formazione di germogli ed infiorescenze. Le foglie, dotate di un lungo picciolo, sono grandi e palmate, con lembo intero o suddiviso in 3-5 lobi, di colore verde più o meno intenso a seconda della varietà, mentre la pagina inferiore è più chiara e può essere ricoperta di peli.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
+        <Literal>Vite</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
+        <Literal>Vitis vinifera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">600</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+        <Class IRI="http://dbpedia.org/ontology/City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+        <Class IRI="http://dbpedia.org/ontology/Territory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <Class IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

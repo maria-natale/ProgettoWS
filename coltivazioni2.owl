@@ -149,6 +149,7 @@ Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/
 
 SubObjectPropertyOf(:caratteristiche_ambientali_compatibili owl:topObjectProperty)
 ObjectPropertyDomain(:caratteristiche_ambientali_compatibili :coltivazione)
+ObjectPropertyRange(:caratteristiche_ambientali_compatibili <http://dbpedia.org/ontology/Territory>)
 ObjectPropertyRange(:caratteristiche_ambientali_compatibili :territorio)
 
 # Object Property: :coltivazione_caratteristiche_ambientali (:coltivazione_caratteristiche_ambientali)
@@ -178,6 +179,7 @@ ObjectPropertyRange(:ha_coltura :coltivazione)
 # Object Property: :ha_locazione (:ha_locazione)
 
 SubObjectPropertyOf(:ha_locazione owl:topObjectProperty)
+ObjectPropertyDomain(:ha_locazione <http://dbpedia.org/ontology/Territory>)
 ObjectPropertyDomain(:ha_locazione :territorio)
 ObjectPropertyRange(:ha_locazione <http://dbpedia.org/ontology/City>)
 
@@ -197,11 +199,13 @@ ObjectPropertyRange(:ha_temperatura :temperatura)
 
 SubObjectPropertyOf(:ha_territorio owl:topObjectProperty)
 ObjectPropertyDomain(:ha_territorio :terreno_coltivato)
+ObjectPropertyRange(:ha_territorio <http://dbpedia.org/ontology/Territory>)
 ObjectPropertyRange(:ha_territorio :territorio)
 
 # Object Property: :territorio_caratteristiche_ambientali (:territorio_caratteristiche_ambientali)
 
 SubObjectPropertyOf(:territorio_caratteristiche_ambientali owl:topObjectProperty)
+ObjectPropertyDomain(:territorio_caratteristiche_ambientali <http://dbpedia.org/ontology/Territory>)
 ObjectPropertyDomain(:territorio_caratteristiche_ambientali :territorio)
 ObjectPropertyRange(:territorio_caratteristiche_ambientali :caratteristiche_ambientali)
 
@@ -281,6 +285,7 @@ SubDataPropertyOf(:tessitura owl:topDataProperty)
 # Class: <http://dbpedia.org/ontology/Territory> (<http://dbpedia.org/ontology/Territory>)
 
 EquivalentClasses(<http://dbpedia.org/ontology/Territory> :territorio)
+SubClassOf(<http://dbpedia.org/ontology/Territory> :territorio)
 
 # Class: :caratteristiche_ambientali (caratteristiche ambientali)
 
@@ -330,6 +335,7 @@ AnnotationAssertion(rdfs:label :terreno_coltivato "terreno coltivato"@it)
 AnnotationAssertion(rdfs:comment :territorio "Un territorio è un'area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo."@it)
 AnnotationAssertion(rdfs:label :territorio "territorio"@it)
 AnnotationAssertion(rdfs:label :territorio "territory"@en)
+SubClassOf(:territorio <http://dbpedia.org/ontology/Territory>)
 
 
 ############################
@@ -862,6 +868,7 @@ ObjectPropertyAssertion(:ha_territorio :TerrColFirenze1 :TerritorioFirenze1)
 
 # Individual: :TerritorioAnzio1 (:TerritorioAnzio1)
 
+ClassAssertion(<http://dbpedia.org/ontology/Territory> :TerritorioAnzio1)
 ClassAssertion(:territorio :TerritorioAnzio1)
 ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio1 <http://dbpedia.org/resource/Anzio>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioAnzio1 :CAAnzio1)
@@ -870,6 +877,7 @@ DataPropertyAssertion(:longitudine :TerritorioAnzio1 "12.619278"^^xsd:float)
 
 # Individual: :TerritorioAnzio2 (:TerritorioAnzio2)
 
+ClassAssertion(<http://dbpedia.org/ontology/Territory> :TerritorioAnzio2)
 ClassAssertion(:territorio :TerritorioAnzio2)
 ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio2 <http://dbpedia.org/resource/Anzio>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioAnzio2 :CAAnzio2)
@@ -878,6 +886,7 @@ DataPropertyAssertion(:longitudine :TerritorioAnzio2 "12.623324"^^xsd:float)
 
 # Individual: :TerritorioFirenze1 (:TerritorioFirenze1)
 
+ClassAssertion(<http://dbpedia.org/ontology/Territory> :TerritorioFirenze1)
 ClassAssertion(:territorio :TerritorioFirenze1)
 ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze1 <http://dbpedia.org/resource/Florence>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze1 :CAFirenze1)
@@ -886,6 +895,7 @@ DataPropertyAssertion(:longitudine :TerritorioFirenze1 "11.253094"^^xsd:float)
 
 # Individual: :TerritorioFirenze2 (:TerritorioFirenze2)
 
+ClassAssertion(<http://dbpedia.org/ontology/Territory> :TerritorioFirenze2)
 ClassAssertion(:territorio :TerritorioFirenze2)
 ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze2 <http://dbpedia.org/resource/Florence>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze2 :CAFirenze1)
@@ -894,6 +904,7 @@ DataPropertyAssertion(:longitudine :TerritorioFirenze2 "11.270858"^^xsd:float)
 
 # Individual: :TerritorioFirenze3 (:TerritorioFirenze3)
 
+ClassAssertion(<http://dbpedia.org/ontology/Territory> :TerritorioFirenze3)
 ClassAssertion(:territorio :TerritorioFirenze3)
 ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze3 <http://dbpedia.org/resource/Florence>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze3 :CAFirenze2)
@@ -902,6 +913,7 @@ DataPropertyAssertion(:longitudine :TerritorioFirenze3 "11.272683"^^xsd:float)
 
 # Individual: :TerritorioPompei1 (:TerritorioPompei1)
 
+ClassAssertion(<http://dbpedia.org/ontology/Territory> :TerritorioPompei1)
 ClassAssertion(:territorio :TerritorioPompei1)
 ObjectPropertyAssertion(:ha_locazione :TerritorioPompei1 <http://dbpedia.org/resource/Pompei>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioPompei1 :CAPompei1)
@@ -910,6 +922,7 @@ DataPropertyAssertion(:longitudine :TerritorioPompei1 "14.518529"^^xsd:float)
 
 # Individual: :TerritorioPompei2 (:TerritorioPompei2)
 
+ClassAssertion(<http://dbpedia.org/ontology/Territory> :TerritorioPompei2)
 ClassAssertion(:territorio :TerritorioPompei2)
 ObjectPropertyAssertion(:ha_locazione :TerritorioPompei2 <http://dbpedia.org/resource/Pompei>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioPompei2 :CAPompei2)
@@ -943,6 +956,8 @@ DataPropertyAssertion(:nome :grano_tenero "grano tenero"^^xsd:string)
 # Individual: :lino (:lino)
 
 ClassAssertion(:coltivazione :lino)
+ObjectPropertyAssertion(:caratteristiche_ambientali_compatibili :lino :TerritorioFirenze1)
+ObjectPropertyAssertion(:caratteristiche_ambientali_compatibili :lino :TerritorioFirenze2)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :lino :CA11)
 DataPropertyAssertion(:morfologia :lino "Il filamento di lino è in media lungo 50 cm ed è costituito da fibrille lunghe circa 30 mm. La fibra ha un diametro apparente di 15-18 µ ed ha un aspetto cilindrico a sezione poligonale con un canale centrale molto più piccolo che nel cotone."^^xsd:string)
 DataPropertyAssertion(:nome :lino "Lino"^^xsd:string)
@@ -951,6 +966,8 @@ DataPropertyAssertion(:nomelatino :lino "Linum usitatissimum"^^xsd:string)
 # Individual: :mais (:mais)
 
 ClassAssertion(:coltivazione :mais)
+ObjectPropertyAssertion(:caratteristiche_ambientali_compatibili :mais :TerritorioFirenze1)
+ObjectPropertyAssertion(:caratteristiche_ambientali_compatibili :mais :TerritorioFirenze2)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :mais :CA11)
 DataPropertyAssertion(:morfologia :mais "La pianta presenta molte caratteristiche comuni alle altre Poaceae: il fusto o culmo (comunemente chiamato “stocco”) distinto in nodi e internodi; una singola foglia a ciascun nodo e le foglie distribuite sul culmo in due file opposte o distiche; ogni foglia consiste in una lamina espansa collegata a una guaina che avvolge il culmo. I nodi basali hanno la tendenza a formare ramificazioni o culmi di accestimento (polloni) e sviluppano radici avventizie."^^xsd:string)
 DataPropertyAssertion(:nome :mais "Mais"^^xsd:string)
@@ -967,6 +984,7 @@ DataPropertyAssertion(:nomelatino :miglio "Panicum miliaceum"^^xsd:string)
 # Individual: :orzo (:orzo)
 
 ClassAssertion(:coltivazione :orzo)
+ObjectPropertyAssertion(:caratteristiche_ambientali_compatibili :orzo :TerritorioAnzio1)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :orzo :CA7)
 DataPropertyAssertion(:morfologia :orzo "Il corredo cromosomico dell'orzo è 2n = 14. Il culmo è cilindrico, cavo formato da 5-8 internodi; l'altezza può superare i 100 cm. Alterne, distiche; lamina lanceolata con superficie cerosa, la ligula è molto ridotta e le auricole sono glabre, molto sviluppate tanto da sovrapporsi e abbracciare il culmo."^^xsd:string)
 DataPropertyAssertion(:nome :orzo "Orzo"^^xsd:string)
@@ -1001,6 +1019,7 @@ DataPropertyAssertion(:nomelatino :segale "Secale cereale"^^xsd:string)
 # Individual: :vite (:vite)
 
 ClassAssertion(:coltivazione :vite)
+ObjectPropertyAssertion(:caratteristiche_ambientali_compatibili :vite :TerritorioPompei2)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :vite :CA6)
 DataPropertyAssertion(:morfologia :vite "Tutte le gemme della vite sono miste, con formazione di germogli ed infiorescenze. Le foglie, dotate di un lungo picciolo, sono grandi e palmate, con lembo intero o suddiviso in 3-5 lobi, di colore verde più o meno intenso a seconda della varietà, mentre la pagina inferiore è più chiara e può essere ricoperta di peli."^^xsd:string)
 DataPropertyAssertion(:nome :vite "Vite"^^xsd:string)
