@@ -1,0 +1,982 @@
+Prefix(:=<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni-inferred#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni-inferred>
+
+Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(<http://dbpedia.org/ontology/Territory>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato>))
+Declaration(Class(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin>))
+Declaration(DataProperty(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura>))
+Declaration(NamedIndividual(<http://dbpedia.org/resource/Anzio>))
+Declaration(NamedIndividual(<http://dbpedia.org/resource/Florence>))
+Declaration(NamedIndividual(<http://dbpedia.org/resource/Pompei>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://dbpedia.org/ontology/City>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio>)
+
+# Object Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio>)
+ObjectPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>)
+
+# Object Property: owl:topObjectProperty (owl:topObjectProperty)
+
+SymmetricObjectProperty(owl:topObjectProperty)
+TransitiveObjectProperty(owl:topObjectProperty)
+ReflexiveObjectProperty(owl:topObjectProperty)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo>)
+DataPropertyRange(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> owl:topDataProperty)
+
+# Data Property: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> owl:topDataProperty)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/Territory> (<http://dbpedia.org/ontology/Territory>)
+
+EquivalentClasses(<http://dbpedia.org/ontology/Territory> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio>)
+
+# Class: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>)
+
+DisjointUnion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo>)
+
+# Class: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche>)
+
+SubClassOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>)
+
+# Class: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo>)
+
+SubClassOf(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://dbpedia.org/resource/Anzio> (<http://dbpedia.org/resource/Anzio>)
+
+ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Anzio>)
+
+# Individual: <http://dbpedia.org/resource/Florence> (<http://dbpedia.org/resource/Florence>)
+
+ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Florence>)
+
+# Individual: <http://dbpedia.org/resource/Pompei> (<http://dbpedia.org/resource/Pompei>)
+
+ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Pompei>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA5> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_caratteristiche_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC1> "moltoUmido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC10> "moltoUmido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC11> "arido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC12> "secco"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC13> "umido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC14> "arido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC2> "arido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC3> "umido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC4> "umido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC5> "arido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC6> "secco"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC7> "umido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC8> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CC9> "moltoUmido"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1> "1000"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1> "permeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS1> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10> "600"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS10> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11> "1000"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS11> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12> "1400"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12> "impermeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS12> "sassoso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2> "1400"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2> "permeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS2> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3> "2600"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3> "impermeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3> "alta"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS3> "sassoso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4> "1000"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4> "impermeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4> "alta"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS4> "fosforoso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5> "600"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5> "alta"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS5> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6> "1000"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS6> "sassoso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7> "1500"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7> "2000"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7> "alta"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7> "fosforoso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8> "permeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8> "sabbioso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9> "1000"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9> "permeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS9> "sabbioso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1> "10"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1> "alta"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio1> "fosforoso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2> "10"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2> "permeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSAnzio2> "sabbioso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1> "50"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1> "permeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze1> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2> "50"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2> "permeabile"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2> "alta"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2> "media"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSFirenze2> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1> "14"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1> "alta"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei1> "argilloso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#altitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2> "20"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#drenaggio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2> "benDrenato"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#fertilità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#pendenza> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2> "bassa"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tessitura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CSPompei2> "sassoso"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200> "200"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200> "100"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500> "500"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P200-500> "200"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600> "600"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P300-600> "300"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500> "500"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-500> "400"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600> "600"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600> "400"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800> "800"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-800> "400"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900> "900"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-900> "400"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#gradoUmidità> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100> "umido"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100> "100"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-100> "50"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500> "500"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P50-500> "50"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10> "10"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-10> "1"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30> "30"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30> "1"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20> "20"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-20> "10"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25> "25"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-25> "10"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32> "32"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T10-32> "10"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25> "25"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T13-25> "13"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23> "23"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T14-23> "14"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24> "24"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T15-24> "15"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18> "18"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-18> "16"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24> "24"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T16-24> "16"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30> "30"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T18-30> "18"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25> "25"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T20-25> "20"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperatura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMax> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24> "24"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#temperaturaMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T5-24> "5"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_coltura> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1>)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1> <http://dbpedia.org/resource/Anzio>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1> "41.449165"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1> "12.619278"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2> <http://dbpedia.org/resource/Anzio>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2> "41.44941"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2> "12.623324"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1> <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1> "43.761185"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1> "11.253094"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2> <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2> "43.74982"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2> "11.270858"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3> <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3> "43.74914"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3> "11.272683"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1> <http://dbpedia.org/resource/Pompei>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1> "40.728935"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1> "14.518529"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2> <http://dbpedia.org/resource/Pompei>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#latitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2> "40.74174"^^xsd:float)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#longitudine> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2> "14.509317"^^xsd:float)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena> "La pianta, Avena Sativa, o avena comune, fa parte della famiglia delle graminacee. La pianta dell'avena presenta un fusto cavo e sottile con diverse ramificazioni. Le sue foglie sono allungate. I fiori si sviluppano a gruppi di piccole spighe che producono le cariossidi, dei piccoli frutti secchi ricchi di amido."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena> "Avena"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena> "Avena sativa"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA2>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro> "L'apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall'embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all'estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell'involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro> "grano duro"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_duro> "Triticum durum"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero> "L'apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall'embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all'estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell'involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero> "Triticum aestivum"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#grano_tenero> "grano tenero"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino> "Il filamento di lino è in media lungo 50 cm ed è costituito da fibrille lunghe circa 30 mm. La fibra ha un diametro apparente di 15-18 µ ed ha un aspetto cilindrico a sezione poligonale con un canale centrale molto più piccolo che nel cotone."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino> "Lino"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino> "Linum usitatissimum"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA11>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais> "La pianta presenta molte caratteristiche comuni alle altre Poaceae: il fusto o culmo (comunemente chiamato “stocco”) distinto in nodi e internodi; una singola foglia a ciascun nodo e le foglie distribuite sul culmo in due file opposte o distiche; ogni foglia consiste in una lamina espansa collegata a una guaina che avvolge il culmo. I nodi basali hanno la tendenza a formare ramificazioni o culmi di accestimento (polloni) e sviluppano radici avventizie."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais> "Mais"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais> "Zea mays"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA10>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio> "L'altezza della pianta può variare da 0,6 a 1,2 m, la spiga da 3 a 13 cm. I semi possono essere bianchi, giallognoli, bruni, verdi, blu ardesia o rossi. Il peso dei 1000 semi è mediamente di 2,6 g."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio> "Miglio"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#miglio> "Panicum miliaceum"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA7>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo> "Il corredo cromosomico dell'orzo è 2n = 14. Il culmo è cilindrico, cavo formato da 5-8 internodi; l'altezza può superare i 100 cm. Alterne, distiche; lamina lanceolata con superficie cerosa, la ligula è molto ridotta e le auricole sono glabre, molto sviluppate tanto da sovrapporsi e abbracciare il culmo."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo> "Orzo"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo> "Hordeum vulgare"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica> "Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento.
+Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica> "Riso Indica"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica> "Oryza sativa"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA4>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica> "Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento. 
+Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica> "Riso Japonica"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_japonica> "Oryza sativa subsp. Japonica"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA9>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale> "La segale presenta dei caratteri botanici simili a quelli del frumento. Da questo si distingue perché la piantina ha una ligula sprovvista delle appendici falciformi abbraccianti il culmo, comuni al frumento e all'orzo, ed inoltre la ligula stessa è corta, dentata a denti brevi e triangolari."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale> "Segale"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#segale> "Secale cereale"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione_caratteristiche_ambientali> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA6>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#morfologia> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite> "Tutte le gemme della vite sono miste, con formazione di germogli ed infiorescenze. Le foglie, dotate di un lungo picciolo, sono grandi e palmate, con lembo intero o suddiviso in 3-5 lobi, di colore verde più o meno intenso a seconda della varietà, mentre la pagina inferiore è più chiara e può essere ricoperta di peli."^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nome> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite> "Vite"^^xsd:string)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#nomelatino> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite> "Vitis vinifera"^^xsd:string)
+
+# Individual: <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+> (<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>)
+
+ClassAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>)
+DataPropertyAssertion(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioniMin> <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+> "600"^^xsd:int)
+
+
+)
