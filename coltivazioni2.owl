@@ -8,7 +8,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2>
 
-Declaration(Class(<http://dbpedia.org/ontology/Agricolture>))
 Declaration(Class(<http://dbpedia.org/ontology/City>))
 Declaration(Class(<http://dbpedia.org/ontology/Territory>))
 Declaration(Class(:caratteristiche_ambientali))
@@ -20,6 +19,8 @@ Declaration(Class(:temperatura))
 Declaration(Class(:terreno_coltivato))
 Declaration(Class(:territorio))
 Declaration(ObjectProperty(:caratteristiche_ambientali_compatibili))
+Declaration(ObjectProperty(:caratteristiche_ambientali_compatibili_inv))
+Declaration(ObjectProperty(:coltivata_in))
 Declaration(ObjectProperty(:coltivazione_caratteristiche_ambientali))
 Declaration(ObjectProperty(:ha_caratteristiche_climatiche))
 Declaration(ObjectProperty(:ha_caratteristiche_suolo))
@@ -27,6 +28,7 @@ Declaration(ObjectProperty(:ha_coltura))
 Declaration(ObjectProperty(:ha_locazione))
 Declaration(ObjectProperty(:ha_precipitazioni))
 Declaration(ObjectProperty(:ha_temperatura))
+Declaration(ObjectProperty(:ha_terreno))
 Declaration(ObjectProperty(:ha_territorio))
 Declaration(ObjectProperty(:territorio_caratteristiche_ambientali))
 Declaration(DataProperty(:altitudine))
@@ -151,6 +153,18 @@ SubObjectPropertyOf(:caratteristiche_ambientali_compatibili owl:topObjectPropert
 ObjectPropertyDomain(:caratteristiche_ambientali_compatibili :coltivazione)
 ObjectPropertyRange(:caratteristiche_ambientali_compatibili :territorio)
 
+# Object Property: :caratteristiche_ambientali_compatibili_inv (:caratteristiche_ambientali_compatibili_inv)
+
+SubObjectPropertyOf(:caratteristiche_ambientali_compatibili_inv owl:topObjectProperty)
+ObjectPropertyDomain(:caratteristiche_ambientali_compatibili_inv :territorio)
+ObjectPropertyRange(:caratteristiche_ambientali_compatibili_inv :coltivazione)
+
+# Object Property: :coltivata_in (:coltivata_in)
+
+SubObjectPropertyOf(:coltivata_in owl:topObjectProperty)
+ObjectPropertyDomain(:coltivata_in :coltivazione)
+ObjectPropertyRange(:coltivata_in :terreno_coltivato)
+
 # Object Property: :coltivazione_caratteristiche_ambientali (:coltivazione_caratteristiche_ambientali)
 
 SubObjectPropertyOf(:coltivazione_caratteristiche_ambientali owl:topObjectProperty)
@@ -192,6 +206,12 @@ ObjectPropertyRange(:ha_precipitazioni :precipitazioni)
 SubObjectPropertyOf(:ha_temperatura owl:topObjectProperty)
 ObjectPropertyDomain(:ha_temperatura :caratteristiche_climatiche)
 ObjectPropertyRange(:ha_temperatura :temperatura)
+
+# Object Property: :ha_terreno (:ha_terreno)
+
+SubObjectPropertyOf(:ha_terreno owl:topObjectProperty)
+ObjectPropertyDomain(:ha_terreno <http://dbpedia.org/ontology/City>)
+ObjectPropertyRange(:ha_terreno :territorio)
 
 # Object Property: :ha_territorio (:ha_territorio)
 
@@ -918,6 +938,7 @@ DataPropertyAssertion(:longitudine :TerritorioPompei2 "14.509317"^^xsd:float)
 
 # Individual: :avena (:avena)
 
+AnnotationAssertion(rdfs:seeAlso :avena <https://dbpedia.org/page/Avena>)
 ClassAssertion(:coltivazione :avena)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :avena :CA8)
 DataPropertyAssertion(:morfologia :avena "La pianta, Avena Sativa, o avena comune, fa parte della famiglia delle graminacee. La pianta dell'avena presenta un fusto cavo e sottile con diverse ramificazioni. Le sue foglie sono allungate. I fiori si sviluppano a gruppi di piccole spighe che producono le cariossidi, dei piccoli frutti secchi ricchi di amido."^^xsd:string)
@@ -926,6 +947,7 @@ DataPropertyAssertion(:nomelatino :avena "Avena sativa"^^xsd:string)
 
 # Individual: :grano_duro (:grano_duro)
 
+AnnotationAssertion(rdfs:seeAlso :grano_duro <https://dbpedia.org/page/Durum>)
 ClassAssertion(:coltivazione :grano_duro)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :grano_duro :CA2)
 DataPropertyAssertion(:morfologia :grano_duro "L'apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall'embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all'estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell'involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa."^^xsd:string)
@@ -934,6 +956,7 @@ DataPropertyAssertion(:nomelatino :grano_duro "Triticum durum"^^xsd:string)
 
 # Individual: :grano_tenero (:grano_tenero)
 
+AnnotationAssertion(rdfs:seeAlso :grano_tenero <https://dbpedia.org/page/Common_wheat>)
 ClassAssertion(:coltivazione :grano_tenero)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :grano_tenero :CA1)
 DataPropertyAssertion(:morfologia :grano_tenero "L'apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall'embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all'estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell'involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa."^^xsd:string)
@@ -942,6 +965,7 @@ DataPropertyAssertion(:nome :grano_tenero "grano tenero"^^xsd:string)
 
 # Individual: :lino (:lino)
 
+AnnotationAssertion(rdfs:seeAlso :lino <https://dbpedia.org/page/Lino>)
 ClassAssertion(:coltivazione :lino)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :lino :CA11)
 DataPropertyAssertion(:morfologia :lino "Il filamento di lino è in media lungo 50 cm ed è costituito da fibrille lunghe circa 30 mm. La fibra ha un diametro apparente di 15-18 µ ed ha un aspetto cilindrico a sezione poligonale con un canale centrale molto più piccolo che nel cotone."^^xsd:string)
@@ -950,6 +974,7 @@ DataPropertyAssertion(:nomelatino :lino "Linum usitatissimum"^^xsd:string)
 
 # Individual: :mais (:mais)
 
+AnnotationAssertion(rdfs:seeAlso :mais <https://dbpedia.org/page/Maize>)
 ClassAssertion(:coltivazione :mais)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :mais :CA11)
 DataPropertyAssertion(:morfologia :mais "La pianta presenta molte caratteristiche comuni alle altre Poaceae: il fusto o culmo (comunemente chiamato “stocco”) distinto in nodi e internodi; una singola foglia a ciascun nodo e le foglie distribuite sul culmo in due file opposte o distiche; ogni foglia consiste in una lamina espansa collegata a una guaina che avvolge il culmo. I nodi basali hanno la tendenza a formare ramificazioni o culmi di accestimento (polloni) e sviluppano radici avventizie."^^xsd:string)
@@ -958,6 +983,7 @@ DataPropertyAssertion(:nomelatino :mais "Zea mays"^^xsd:string)
 
 # Individual: :miglio (:miglio)
 
+AnnotationAssertion(rdfs:seeAlso :miglio <https://dbpedia.org/page/Proso_millet>)
 ClassAssertion(:coltivazione :miglio)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :miglio :CA10)
 DataPropertyAssertion(:morfologia :miglio "L'altezza della pianta può variare da 0,6 a 1,2 m, la spiga da 3 a 13 cm. I semi possono essere bianchi, giallognoli, bruni, verdi, blu ardesia o rossi. Il peso dei 1000 semi è mediamente di 2,6 g."^^xsd:string)
@@ -966,6 +992,7 @@ DataPropertyAssertion(:nomelatino :miglio "Panicum miliaceum"^^xsd:string)
 
 # Individual: :orzo (:orzo)
 
+AnnotationAssertion(rdfs:seeAlso :orzo <https://dbpedia.org/page/Orzo>)
 ClassAssertion(:coltivazione :orzo)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :orzo :CA7)
 DataPropertyAssertion(:morfologia :orzo "Il corredo cromosomico dell'orzo è 2n = 14. Il culmo è cilindrico, cavo formato da 5-8 internodi; l'altezza può superare i 100 cm. Alterne, distiche; lamina lanceolata con superficie cerosa, la ligula è molto ridotta e le auricole sono glabre, molto sviluppate tanto da sovrapporsi e abbracciare il culmo."^^xsd:string)
@@ -974,6 +1001,7 @@ DataPropertyAssertion(:nomelatino :orzo "Hordeum vulgare"^^xsd:string)
 
 # Individual: :riso_indica (:riso_indica)
 
+AnnotationAssertion(rdfs:seeAlso :riso_indica <http://id.dbpedia.org/page/Oryza_sativa>)
 ClassAssertion(:coltivazione :riso_indica)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :riso_indica :CA3)
 DataPropertyAssertion(:morfologia :riso_indica "Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento.
@@ -983,6 +1011,7 @@ DataPropertyAssertion(:nomelatino :riso_indica "Oryza sativa"^^xsd:string)
 
 # Individual: :riso_japonica (:riso_japonica)
 
+AnnotationAssertion(rdfs:seeAlso :riso_japonica <https://dbpedia.org/page/Japanese_rice>)
 ClassAssertion(:coltivazione :riso_japonica)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :riso_japonica :CA4)
 DataPropertyAssertion(:morfologia :riso_japonica "Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento. 
@@ -992,6 +1021,7 @@ DataPropertyAssertion(:nomelatino :riso_japonica "Oryza sativa subsp. Japonica"^
 
 # Individual: :segale (:segale)
 
+AnnotationAssertion(rdfs:seeAlso :segale <https://dbpedia.org/page/Secale>)
 ClassAssertion(:coltivazione :segale)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :segale :CA9)
 DataPropertyAssertion(:morfologia :segale "La segale presenta dei caratteri botanici simili a quelli del frumento. Da questo si distingue perché la piantina ha una ligula sprovvista delle appendici falciformi abbraccianti il culmo, comuni al frumento e all'orzo, ed inoltre la ligula stessa è corta, dentata a denti brevi e triangolari."^^xsd:string)
@@ -1000,6 +1030,7 @@ DataPropertyAssertion(:nomelatino :segale "Secale cereale"^^xsd:string)
 
 # Individual: :vite (:vite)
 
+AnnotationAssertion(rdfs:seeAlso :vite <https://dbpedia.org/page/Vitis_vinifera>)
 ClassAssertion(:coltivazione :vite)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :vite :CA6)
 DataPropertyAssertion(:morfologia :vite "Tutte le gemme della vite sono miste, con formazione di germogli ed infiorescenze. Le foglie, dotate di un lungo picciolo, sono grandi e palmate, con lembo intero o suddiviso in 3-5 lobi, di colore verde più o meno intenso a seconda della varietà, mentre la pagina inferiore è più chiara e può essere ricoperta di peli."^^xsd:string)

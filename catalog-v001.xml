@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1654849160341" name="duplicate:http://www.semanticweb.org/ontologies/coltivazioni" uri="owl_vecchi/backup.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654849160341" name="duplicate:http://www.semanticweb.org/ontologies/coltivazioni" uri="owl_vecchi/backupClima.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654849160341" name="duplicate:http://www.semanticweb.org/ontologies/coltivazioni" uri="owl_vecchi/backupTerreniClima%20-%20Copia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654849160341" name="duplicate:http://www.semanticweb.org/ontologies/coltivazioni" uri="owl_vecchi/Coltivazioni-noInferenza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654849160341" name="duplicate:http://www.semanticweb.org/ontologies/coltivazioni" uri="owl_vecchi/DATICOMPLETI.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1654849160341" name="shadowed:http://www.semanticweb.org/ontologies/coltivazioni" uri="ontologia/coltivazioni.owl"/>
+    </group>
+</catalog>
