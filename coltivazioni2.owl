@@ -893,8 +893,8 @@ DataPropertyAssertion(:longitudine :TerritorioAnzio1 "12.619278"^^xsd:float)
 ClassAssertion(:territorio :TerritorioAnzio2)
 ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio2 <http://dbpedia.org/resource/Anzio>)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioAnzio2 :CAAnzio2)
-DataPropertyAssertion(:latitudine :TerritorioAnzio2 "12.623324"^^xsd:float)
 DataPropertyAssertion(:latitudine :TerritorioAnzio2 "41.44941"^^xsd:float)
+DataPropertyAssertion(:longitudine :TerritorioAnzio2 "12.623324"^^xsd:float)
 
 # Individual: :TerritorioFirenze1 (:TerritorioFirenze1)
 

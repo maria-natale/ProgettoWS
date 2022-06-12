@@ -1338,8 +1338,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Anzio"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
-        <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.623324</coltivazioni2:latitudine>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.44941</coltivazioni2:latitudine>
+        <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.623324</coltivazioni2:longitudine>
     </owl:NamedIndividual>
     
 
