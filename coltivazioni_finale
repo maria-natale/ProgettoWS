@@ -1423,7 +1423,7 @@
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La pianta, Avena Sativa, o avena comune, fa parte della famiglia delle graminacee. La pianta dell&apos;avena presenta un fusto cavo e sottile con diverse ramificazioni. Le sue foglie sono allungate. I fiori si sviluppano a gruppi di piccole spighe che producono le cariossidi, dei piccoli frutti secchi ricchi di amido.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avena</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avena sativa</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Avena"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Avena"/>
     </owl:NamedIndividual>
     
 
@@ -1436,7 +1436,7 @@
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall&apos;embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all&apos;estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell&apos;involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grano duro</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triticum durum</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Durum"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Durum"/>
     </owl:NamedIndividual>
     
 
@@ -1449,7 +1449,7 @@
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall&apos;embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all&apos;estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell&apos;involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triticum aestivum</coltivazioni2:nome>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grano tenero</coltivazioni2:nome>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Common_wheat"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Common_wheat"/>
     </owl:NamedIndividual>
     
 
@@ -1465,7 +1465,7 @@
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il filamento di lino è in media lungo 50 cm ed è costituito da fibrille lunghe circa 30 mm. La fibra ha un diametro apparente di 15-18 µ ed ha un aspetto cilindrico a sezione poligonale con un canale centrale molto più piccolo che nel cotone.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lino</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linum usitatissimum</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Lino"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Lino"/>
     </owl:NamedIndividual>
     
 
@@ -1480,7 +1480,7 @@
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La pianta presenta molte caratteristiche comuni alle altre Poaceae: il fusto o culmo (comunemente chiamato “stocco”) distinto in nodi e internodi; una singola foglia a ciascun nodo e le foglie distribuite sul culmo in due file opposte o distiche; ogni foglia consiste in una lamina espansa collegata a una guaina che avvolge il culmo. I nodi basali hanno la tendenza a formare ramificazioni o culmi di accestimento (polloni) e sviluppano radici avventizie.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mais</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zea mays</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Maize"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Maize"/>
     </owl:NamedIndividual>
     
 
@@ -1493,7 +1493,7 @@
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;altezza della pianta può variare da 0,6 a 1,2 m, la spiga da 3 a 13 cm. I semi possono essere bianchi, giallognoli, bruni, verdi, blu ardesia o rossi. Il peso dei 1000 semi è mediamente di 2,6 g.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miglio</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panicum miliaceum</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Proso_millet"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Proso_millet"/>
     </owl:NamedIndividual>
     
 
@@ -1508,7 +1508,7 @@
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il corredo cromosomico dell&apos;orzo è 2n = 14. Il culmo è cilindrico, cavo formato da 5-8 internodi; l&apos;altezza può superare i 100 cm. Alterne, distiche; lamina lanceolata con superficie cerosa, la ligula è molto ridotta e le auricole sono glabre, molto sviluppate tanto da sovrapporsi e abbracciare il culmo.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orzo</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hordeum vulgare</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Orzo"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Orzo"/>
     </owl:NamedIndividual>
     
 
@@ -1522,7 +1522,7 @@
 Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso Indica</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oryza sativa</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="http://id.dbpedia.org/page/Oryza_sativa"/>
+        <rdfs:seeAlso rdf:resource="http://id.dbpedia.org/resource/Oryza_sativa"/>
     </owl:NamedIndividual>
     
 
@@ -1536,7 +1536,7 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
 Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso Japonica</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oryza sativa subsp. Japonica</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Japanese_rice"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Japanese_rice"/>
     </owl:NamedIndividual>
     
 
@@ -1549,7 +1549,7 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La segale presenta dei caratteri botanici simili a quelli del frumento. Da questo si distingue perché la piantina ha una ligula sprovvista delle appendici falciformi abbraccianti il culmo, comuni al frumento e all&apos;orzo, ed inoltre la ligula stessa è corta, dentata a denti brevi e triangolari.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Segale</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secale cereale</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Secale"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Secale"/>
     </owl:NamedIndividual>
     
 
@@ -1563,7 +1563,7 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tutte le gemme della vite sono miste, con formazione di germogli ed infiorescenze. Le foglie, dotate di un lungo picciolo, sono grandi e palmate, con lembo intero o suddiviso in 3-5 lobi, di colore verde più o meno intenso a seconda della varietà, mentre la pagina inferiore è più chiara e può essere ricoperta di peli.</coltivazioni2:morfologia>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vite</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitis vinifera</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Vitis_vinifera"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Vitis_vinifera"/>
     </owl:NamedIndividual>
     
 
