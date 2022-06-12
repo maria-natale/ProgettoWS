@@ -1447,8 +1447,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
         <coltivazioni2:coltivazione_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA1"/>
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall&apos;embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all&apos;estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell&apos;involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa.</coltivazioni2:morfologia>
-        <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triticum aestivum</coltivazioni2:nome>
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grano tenero</coltivazioni2:nome>
+        <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triticum aestivum</coltivazioni2:nomelatino>
         <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Common_wheat"/>
     </owl:NamedIndividual>
     

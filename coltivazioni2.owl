@@ -345,7 +345,7 @@ AnnotationAssertion(rdfs:label :temperatura "temperature"@en)
 AnnotationAssertion(rdfs:comment :terreno_coltivato "Specifica in quale territorio una certa coltivazione viene coltivata"@it)
 AnnotationAssertion(rdfs:label :terreno_coltivato "terreno coltivato"@it)
 
-# Class: :territorio (territorio)
+# Class: :territorio (territory)
 
 AnnotationAssertion(rdfs:comment :territorio "Un territorio è un'area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo."@it)
 AnnotationAssertion(rdfs:label :territorio "territorio"@it)
@@ -960,8 +960,8 @@ AnnotationAssertion(rdfs:seeAlso :grano_tenero <http://dbpedia.org/resource/Comm
 ClassAssertion(:coltivazione :grano_tenero)
 ObjectPropertyAssertion(:coltivazione_caratteristiche_ambientali :grano_tenero :CA1)
 DataPropertyAssertion(:morfologia :grano_tenero "L'apparato radicale è del tipo fascicolato e presenta delle radici Seminali e Avventizie. Le radici seminali sono quelle che si originano, in numero da 3 a 8, dall'embrione: sono sottili, ricchissime di peli radicali e molto ramificati. Le radici avventizie si sviluppano successivamente a quelle seminali a partire da quando la piantina ha formato la 3ª/4ª foglia. Il fusto del frumento è un culmo costituito da nodi e internodi; è provvisto di foglie e all'estremità inferiore di infiorescenze. La granella o chicco del frumento è una cariosside, ovvero non ha semi distinti dal resto dell'involucro. Essa è un frutto secco indeiscente, ossia non si apre a maturazione completa."^^xsd:string)
-DataPropertyAssertion(:nome :grano_tenero "Triticum aestivum"^^xsd:string)
 DataPropertyAssertion(:nome :grano_tenero "grano tenero"^^xsd:string)
+DataPropertyAssertion(:nomelatino :grano_tenero "Triticum aestivum"^^xsd:string)
 
 # Individual: :lino (:lino)
 
