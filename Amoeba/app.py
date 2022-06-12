@@ -11,7 +11,8 @@ def hello():
 
 @app.route('/search_coltivazione', methods=['GET'])
 def handle_data():
-    args =request.args
+    args = request.args
     nome_coltivazione = args["col"]
     print(nome_coltivazione)
-    return render_template('visualizza_coltivazione.html')
+    coltivazione = dbManager.getColtivazione(nome_coltivazione)
+    return render_template('visualizza_coltivazione.html', coltivazione = coltivazione)

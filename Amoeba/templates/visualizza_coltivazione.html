@@ -66,21 +66,31 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Coltivazioni</h2>
+          <h2>{{coltivazione.nome}} ({{coltivazione.nomelatino}})</h2>
         </div>
 
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <ul class="list-group">
-              {% for coltivazione in coltivazioni: %}
-                <a href="" class="list-group-item list-group-item-action">{{coltivazione}}</a>
-              {% endfor %}
-            </ul>
-          </div>
-          </div>
+            <div class="col-md-4 col-xl-4">
+                <img src={{coltivazione.thumbnail}}> 
+            </div>
+            <div class="col-md-6 col-xl-6">
+                <p>{{coltivazione.comment}} </p>
+            </div>
+            <div class="col-md-1 col-xl-1">
+            </div>
+            <div class="col-md-1 col-xl-1">
+                <a href="#" >More</a>
+            </div>
         </div>
+        <div style ="height:30px"></div>
+        <div class = "row">
+            <div class="col-md-10 col-xl-10">
+                <h3>Caratteristiche morfologiche</h3>
+                <p>{{coltivazione.morfologia}}</p>
+            </div>
+        </div>
+    </div>
 
-      </div>
     </section><!-- End About Us Section -->
 
   </main><!-- End #main -->
