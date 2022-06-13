@@ -16,3 +16,13 @@ def handle_data():
     print(nome_coltivazione)
     coltivazione = dbManager.getColtivazione(nome_coltivazione)
     return render_template('visualizza_coltivazione.html', coltivazione = coltivazione)
+
+
+@app.route('/describe_coltivazione', methods=['GET'])
+def describe_coltivazione():
+    args = request.args
+    coltivazione = args["col"]
+    print(coltivazione)
+    riferimenti = dbManager.describeColtivazione(coltivazione)
+    return render_template('describe_coltivazione.html', graphN3 = riferimenti)
+

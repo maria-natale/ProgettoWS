@@ -47,7 +47,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
-        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
     </owl:ObjectProperty>
     
@@ -57,7 +56,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili_inv">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
     </owl:ObjectProperty>
@@ -118,7 +116,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <rdfs:range rdf:resource="http://dbpedia.org/ontology/City"/>
     </owl:ObjectProperty>
@@ -150,7 +147,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_terreno">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
-        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
     </owl:ObjectProperty>
     
@@ -161,7 +157,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
-        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
     </owl:ObjectProperty>
     
@@ -171,7 +166,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
     </owl:ObjectProperty>
@@ -342,7 +336,6 @@
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Territory">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
     </owl:Class>
     
 
@@ -427,7 +420,6 @@
     <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio">
-        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:comment xml:lang="it">Un territorio è un&apos;area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo.</rdfs:comment>
         <rdfs:label xml:lang="it">territorio</rdfs:label>
         <rdfs:label xml:lang="en">territory</rdfs:label>
@@ -945,7 +937,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS7">
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
-        <coltivazioni2:altitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</coltivazioni2:altitudine>
         <coltivazioni2:altitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</coltivazioni2:altitudine>
         <coltivazioni2:drenaggio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">benDrenato</coltivazioni2:drenaggio>
         <coltivazioni2:fertilità rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alta</coltivazioni2:fertilità>
@@ -960,6 +951,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CS8">
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_del_suolo"/>
+        <coltivazioni2:altitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</coltivazioni2:altitudine>
         <coltivazioni2:drenaggio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">permeabile</coltivazioni2:drenaggio>
         <coltivazioni2:fertilità rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bassa</coltivazioni2:fertilità>
         <coltivazioni2:pendenza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bassa</coltivazioni2:pendenza>
@@ -1336,6 +1328,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2">
         <rdf:type rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
         <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Anzio"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.44941</coltivazioni2:latitudine>
@@ -1418,6 +1411,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena">
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <coltivazioni2:caratteristiche_ambientali_compatibili rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
         <coltivazioni2:coltivata_in rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2"/>
         <coltivazioni2:coltivazione_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA8"/>
         <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La pianta, Avena Sativa, o avena comune, fa parte della famiglia delle graminacee. La pianta dell&apos;avena presenta un fusto cavo e sottile con diverse ramificazioni. Le sue foglie sono allungate. I fiori si sviluppano a gruppi di piccole spighe che producono le cariossidi, dei piccoli frutti secchi ricchi di amido.</coltivazioni2:morfologia>
@@ -1509,20 +1503,6 @@
         <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orzo</coltivazioni2:nome>
         <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hordeum vulgare</coltivazioni2:nomelatino>
         <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Orzo"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#riso_indica">
-        <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
-        <coltivazioni2:coltivazione_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CA3"/>
-        <coltivazioni2:morfologia rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il fusto (detto culmo) presenta internodi cavi e nodi pieni e si sviluppa in maniera simile al frumento.
-Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri e larghe due, con peli bianchi, corti e spessi; la ligula è lunga e sono presenti auricole pelose.</coltivazioni2:morfologia>
-        <coltivazioni2:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso Indica</coltivazioni2:nome>
-        <coltivazioni2:nomelatino rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oryza sativa</coltivazioni2:nomelatino>
-        <rdfs:seeAlso rdf:resource="http://id.dbpedia.org/resource/Oryza_sativa"/>
     </owl:NamedIndividual>
     
 

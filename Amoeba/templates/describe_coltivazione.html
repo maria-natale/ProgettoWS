@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>{{coltivazione.nome}}</title>
+  <title>Risorse collegate</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -60,52 +60,17 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>{{coltivazione.nome}} ({{coltivazione.nomelatino}})</h2>
+          <h2>Risorse collegate</h2>
+        </div>
+        <div class="col-md-12 col-xl-12">
+            {%for s, p, o in graphN3.triples((None, None, None)): %}
+            {% if 'dbpedia' in o %}
+                <p><a href="{{o}}">{{o}}</a></p>
+            {% endif %}
+            {% endfor %}
         </div>
 
-        <div class="row">
-            <div class="col-md-4 col-xl-4">
-                <img src={{coltivazione.thumbnail}}> 
-            </div>
-            <div class="col-md-6 col-xl-6">
-                <p>{{coltivazione.comment}} </p>
-            </div>
-            <div class="col-md-1 col-xl-1">
-            </div>
-            <div class="col-md-1 col-xl-1">
-                <a href="http://127.0.0.1:5000/describe_coltivazione?col={{coltivazione.link}}">More</a>
-            </div>
-        </div>
-        <div style ="height:30px"></div>
-        <div class = "row">
-            <div class="col-md-10 col-xl-10">
-                <h3>Caratteristiche morfologiche</h3>
-                <p>{{coltivazione.morfologia}}</p>
-            </div>
-        </div>
-        <div style ="height:30px"></div>
-        <div class = "row">
-              <center><h3>Caratteristiche Ambientali</h3></center>
-              <div class="col-md-5 col-xl-5">
-              <h4>Caratteristiche del suolo</h4>
-              <p>Altitudine: fino a {{coltivazione.caratteristicheAmbientali.caratteristicheSuolo.altitudine}}</p>
-              <p>Pendenza suolo: {{coltivazione.caratteristicheAmbientali.caratteristicheSuolo.pendenza}}</p>
-              <p>Fertilità terreno: {{coltivazione.caratteristicheAmbientali.caratteristicheSuolo.fertilità}}</p>
-              <p>Drenaggio acqua: {{coltivazione.caratteristicheAmbientali.caratteristicheSuolo.drenaggio}}</p>
-              <p>Tessitura terreno: {{coltivazione.caratteristicheAmbientali.caratteristicheSuolo.tessitura}}</p>
-            </div>
-            <div class="col-md-2 col-xl-2"></div>
-            <div class="col-md-5 col-xl-5">
-              <h4>Caratteristiche climatiche</h4>
-              <b>Temperatura</b>
-              <p>Temperatura minima: {{coltivazione.caratteristicheAmbientali.caratteristicheClimatiche.temperatura.temperaturaMin}}</p>
-              <p>Temperatura massima: {{coltivazione.caratteristicheAmbientali.caratteristicheClimatiche.temperatura.temperaturaMax}}</p>
-              <b>Precipitazioni</b>
-              <p>mm pioggia mininimi annui: {{coltivazione.caratteristicheAmbientali.caratteristicheClimatiche.precipitazioni.precipitazioniMin}}</p>
-              <p>mm pioggia massimi annui: {{coltivazione.caratteristicheAmbientali.caratteristicheClimatiche.precipitazioni.precipitazioniMax}}</p>
-              <p>Grado di umidità: {{coltivazione.caratteristicheAmbientali.caratteristicheClimatiche.gradoUmidità}}</p>
-            </div>
-          </div>
+        
     </div>
 
     </section><!-- End About Us Section -->
