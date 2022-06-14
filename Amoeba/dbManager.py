@@ -286,12 +286,13 @@ class dbManager:
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
         citta = []
-        print(results)
+        
         for result in results["results"]["bindings"]:
             c = Citta(result["label"]["value"], link=result["source"]["value"])
             #dbManager.getCityDbpedia(c)
             #print(c.link)
             citta.append(c)
+       
         return citta
 
     @staticmethod
@@ -339,7 +340,7 @@ class dbManager:
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
         terreni = []
-        print(results)
+        
         for result in results["results"]["bindings"]:
             t = Territorio(result["latitudine"]["value"], result["longitudine"]["value"], citta)
             terreni.append(t)
@@ -363,7 +364,6 @@ class dbManager:
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
         return results["boolean"]
-
 
 
 
