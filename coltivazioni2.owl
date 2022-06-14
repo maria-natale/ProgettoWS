@@ -8,8 +8,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2>
 
-Declaration(Class(<http://dbpedia.org/ontology/City>))
 Declaration(Class(<http://dbpedia.org/ontology/Territory>))
+Declaration(Class(:City))
 Declaration(Class(:caratteristiche_ambientali))
 Declaration(Class(:caratteristiche_climatiche))
 Declaration(Class(:caratteristiche_del_suolo))
@@ -29,6 +29,7 @@ Declaration(ObjectProperty(:ha_locazione))
 Declaration(ObjectProperty(:ha_precipitazioni))
 Declaration(ObjectProperty(:ha_temperatura))
 Declaration(ObjectProperty(:ha_terreno))
+Declaration(ObjectProperty(:ha_terreno_coltivato))
 Declaration(ObjectProperty(:ha_territorio))
 Declaration(ObjectProperty(:territorio_caratteristiche_ambientali))
 Declaration(DataProperty(:altitudine))
@@ -46,9 +47,7 @@ Declaration(DataProperty(:precipitazioniMin))
 Declaration(DataProperty(:temperaturaMax))
 Declaration(DataProperty(:temperaturaMin))
 Declaration(DataProperty(:tessitura))
-Declaration(NamedIndividual(<http://dbpedia.org/resource/Anzio>))
-Declaration(NamedIndividual(<http://dbpedia.org/resource/Florence>))
-Declaration(NamedIndividual(<http://dbpedia.org/resource/Pompei>))
+Declaration(NamedIndividual(:Anzio))
 Declaration(NamedIndividual(:CA1))
 Declaration(NamedIndividual(:CA10))
 Declaration(NamedIndividual(:CA11))
@@ -98,6 +97,7 @@ Declaration(NamedIndividual(:CSFirenze1))
 Declaration(NamedIndividual(:CSFirenze2))
 Declaration(NamedIndividual(:CSPompei1))
 Declaration(NamedIndividual(:CSPompei2))
+Declaration(NamedIndividual(:Firenze))
 Declaration(NamedIndividual(:P100-200))
 Declaration(NamedIndividual(:P200-500))
 Declaration(NamedIndividual(:P300-600))
@@ -107,6 +107,7 @@ Declaration(NamedIndividual(:P400-800))
 Declaration(NamedIndividual(:P400-900))
 Declaration(NamedIndividual(:P50-100))
 Declaration(NamedIndividual(:P50-500))
+Declaration(NamedIndividual(:Pompei))
 Declaration(NamedIndividual(:T1-10))
 Declaration(NamedIndividual(:T1-30))
 Declaration(NamedIndividual(:T10-20))
@@ -141,6 +142,7 @@ Declaration(NamedIndividual(:riso_japonica))
 Declaration(NamedIndividual(:segale))
 Declaration(NamedIndividual(:vite))
 Declaration(NamedIndividual(<http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P600+>))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
 
 ############################
 #   Object Properties
@@ -192,7 +194,7 @@ ObjectPropertyRange(:ha_coltura :coltivazione)
 
 SubObjectPropertyOf(:ha_locazione owl:topObjectProperty)
 ObjectPropertyDomain(:ha_locazione :territorio)
-ObjectPropertyRange(:ha_locazione <http://dbpedia.org/ontology/City>)
+ObjectPropertyRange(:ha_locazione :City)
 
 # Object Property: :ha_precipitazioni (:ha_precipitazioni)
 
@@ -209,8 +211,14 @@ ObjectPropertyRange(:ha_temperatura :temperatura)
 # Object Property: :ha_terreno (:ha_terreno)
 
 SubObjectPropertyOf(:ha_terreno owl:topObjectProperty)
-ObjectPropertyDomain(:ha_terreno <http://dbpedia.org/ontology/City>)
+ObjectPropertyDomain(:ha_terreno :City)
 ObjectPropertyRange(:ha_terreno :territorio)
+
+# Object Property: :ha_terreno_coltivato (:ha_terreno_coltivato)
+
+SubObjectPropertyOf(:ha_terreno_coltivato owl:topObjectProperty)
+ObjectPropertyDomain(:ha_terreno_coltivato :City)
+ObjectPropertyRange(:ha_terreno_coltivato :terreno_coltivato)
 
 # Object Property: :ha_territorio (:ha_territorio)
 
@@ -355,17 +363,11 @@ AnnotationAssertion(rdfs:label :territorio "territory"@en)
 #   Named Individuals
 ############################
 
-# Individual: <http://dbpedia.org/resource/Anzio> (<http://dbpedia.org/resource/Anzio>)
+# Individual: :Anzio (Anzio)
 
-ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Anzio>)
-
-# Individual: <http://dbpedia.org/resource/Florence> (<http://dbpedia.org/resource/Florence>)
-
-ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Florence>)
-
-# Individual: <http://dbpedia.org/resource/Pompei> (<http://dbpedia.org/resource/Pompei>)
-
-ClassAssertion(<http://dbpedia.org/ontology/City> <http://dbpedia.org/resource/Pompei>)
+AnnotationAssertion(rdfs:label :Anzio "Anzio"^^xsd:string)
+AnnotationAssertion(rdfs:seeAlso :Anzio <http://dbpedia.org/page/Anzio>)
+ClassAssertion(:City :Anzio)
 
 # Individual: :CA1 (:CA1)
 
@@ -558,6 +560,7 @@ DataPropertyAssertion(:gradoUmidità :CC7 "umido"^^xsd:string)
 ClassAssertion(:caratteristiche_climatiche :CC8)
 ObjectPropertyAssertion(:ha_precipitazioni :CC8 :P400-600)
 ObjectPropertyAssertion(:ha_temperatura :CC8 :T1-30)
+DataPropertyAssertion(:gradoUmidità :CC8 "umido"^^xsd:string)
 
 # Individual: :CC9 (:CC9)
 
@@ -728,6 +731,12 @@ DataPropertyAssertion(:fertilità :CSPompei2 "bassa"^^xsd:string)
 DataPropertyAssertion(:pendenza :CSPompei2 "bassa"^^xsd:string)
 DataPropertyAssertion(:tessitura :CSPompei2 "sassoso"^^xsd:string)
 
+# Individual: :Firenze (Firenze)
+
+AnnotationAssertion(rdfs:label :Firenze "Firenze"^^xsd:string)
+AnnotationAssertion(rdfs:seeAlso :Firenze <http://dbpedia.org/page/Florence>)
+ClassAssertion(:City :Firenze)
+
 # Individual: :P100-200 (:P100-200)
 
 ClassAssertion(:precipitazioni :P100-200)
@@ -782,6 +791,12 @@ DataPropertyAssertion(:precipitazioniMin :P50-100 "50"^^xsd:int)
 ClassAssertion(:precipitazioni :P50-500)
 DataPropertyAssertion(:precipitazioniMax :P50-500 "500"^^xsd:int)
 DataPropertyAssertion(:precipitazioniMin :P50-500 "50"^^xsd:int)
+
+# Individual: :Pompei (Pompei)
+
+AnnotationAssertion(rdfs:label :Pompei "Pompei"^^xsd:string)
+AnnotationAssertion(rdfs:seeAlso :Pompei <http://dbpedia.org/page/Pompei>)
+ClassAssertion(:City :Pompei)
 
 # Individual: :T1-10 (:T1-10)
 
@@ -882,7 +897,7 @@ ObjectPropertyAssertion(:ha_territorio :TerrColFirenze1 :TerritorioFirenze1)
 # Individual: :TerritorioAnzio1 (:TerritorioAnzio1)
 
 ClassAssertion(:territorio :TerritorioAnzio1)
-ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio1 <http://dbpedia.org/resource/Anzio>)
+ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio1 :Anzio)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioAnzio1 :CAAnzio1)
 DataPropertyAssertion(:latitudine :TerritorioAnzio1 "41.449165"^^xsd:float)
 DataPropertyAssertion(:longitudine :TerritorioAnzio1 "12.619278"^^xsd:float)
@@ -890,7 +905,7 @@ DataPropertyAssertion(:longitudine :TerritorioAnzio1 "12.619278"^^xsd:float)
 # Individual: :TerritorioAnzio2 (:TerritorioAnzio2)
 
 ClassAssertion(:territorio :TerritorioAnzio2)
-ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio2 <http://dbpedia.org/resource/Anzio>)
+ObjectPropertyAssertion(:ha_locazione :TerritorioAnzio2 :Anzio)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioAnzio2 :CAAnzio2)
 DataPropertyAssertion(:latitudine :TerritorioAnzio2 "41.44941"^^xsd:float)
 DataPropertyAssertion(:longitudine :TerritorioAnzio2 "12.623324"^^xsd:float)
@@ -898,7 +913,7 @@ DataPropertyAssertion(:longitudine :TerritorioAnzio2 "12.623324"^^xsd:float)
 # Individual: :TerritorioFirenze1 (:TerritorioFirenze1)
 
 ClassAssertion(:territorio :TerritorioFirenze1)
-ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze1 <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze1 :Firenze)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze1 :CAFirenze1)
 DataPropertyAssertion(:latitudine :TerritorioFirenze1 "43.761185"^^xsd:float)
 DataPropertyAssertion(:longitudine :TerritorioFirenze1 "11.253094"^^xsd:float)
@@ -906,7 +921,7 @@ DataPropertyAssertion(:longitudine :TerritorioFirenze1 "11.253094"^^xsd:float)
 # Individual: :TerritorioFirenze2 (:TerritorioFirenze2)
 
 ClassAssertion(:territorio :TerritorioFirenze2)
-ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze2 <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze2 :Firenze)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze2 :CAFirenze1)
 DataPropertyAssertion(:latitudine :TerritorioFirenze2 "43.74982"^^xsd:float)
 DataPropertyAssertion(:longitudine :TerritorioFirenze2 "11.270858"^^xsd:float)
@@ -914,7 +929,7 @@ DataPropertyAssertion(:longitudine :TerritorioFirenze2 "11.270858"^^xsd:float)
 # Individual: :TerritorioFirenze3 (:TerritorioFirenze3)
 
 ClassAssertion(:territorio :TerritorioFirenze3)
-ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze3 <http://dbpedia.org/resource/Florence>)
+ObjectPropertyAssertion(:ha_locazione :TerritorioFirenze3 :Firenze)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioFirenze3 :CAFirenze2)
 DataPropertyAssertion(:latitudine :TerritorioFirenze3 "43.74914"^^xsd:float)
 DataPropertyAssertion(:longitudine :TerritorioFirenze3 "11.272683"^^xsd:float)
@@ -922,7 +937,7 @@ DataPropertyAssertion(:longitudine :TerritorioFirenze3 "11.272683"^^xsd:float)
 # Individual: :TerritorioPompei1 (:TerritorioPompei1)
 
 ClassAssertion(:territorio :TerritorioPompei1)
-ObjectPropertyAssertion(:ha_locazione :TerritorioPompei1 <http://dbpedia.org/resource/Pompei>)
+ObjectPropertyAssertion(:ha_locazione :TerritorioPompei1 :Pompei)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioPompei1 :CAPompei1)
 DataPropertyAssertion(:latitudine :TerritorioPompei1 "40.728935"^^xsd:float)
 DataPropertyAssertion(:longitudine :TerritorioPompei1 "14.518529"^^xsd:float)
@@ -930,7 +945,7 @@ DataPropertyAssertion(:longitudine :TerritorioPompei1 "14.518529"^^xsd:float)
 # Individual: :TerritorioPompei2 (:TerritorioPompei2)
 
 ClassAssertion(:territorio :TerritorioPompei2)
-ObjectPropertyAssertion(:ha_locazione :TerritorioPompei2 <http://dbpedia.org/resource/Pompei>)
+ObjectPropertyAssertion(:ha_locazione :TerritorioPompei2 :Pompei)
 ObjectPropertyAssertion(:territorio_caratteristiche_ambientali :TerritorioPompei2 :CAPompei2)
 DataPropertyAssertion(:latitudine :TerritorioPompei2 "40.74174"^^xsd:float)
 DataPropertyAssertion(:longitudine :TerritorioPompei2 "14.509317"^^xsd:float)

@@ -6,7 +6,9 @@ app = Flask(__name__,static_folder="templates/static")
 @app.route("/")
 def hello():
     coltivazioni = dbManager.getColtivazioni()
-    terreni = dbManager.getTerreni()
+    citta = dbManager.getCittà()
+    #terreni = dbManager.getTerreni()
+    print(len(citta))
     return render_template('index.html', coltivazioni = coltivazioni)
 
 

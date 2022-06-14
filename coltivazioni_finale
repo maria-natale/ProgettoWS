@@ -47,6 +47,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
     </owl:ObjectProperty>
     
@@ -56,6 +57,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali_compatibili_inv">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivazione"/>
     </owl:ObjectProperty>
@@ -116,8 +118,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
-        <rdfs:range rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
     </owl:ObjectProperty>
     
 
@@ -146,8 +149,19 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_terreno">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_terreno_coltivato -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_terreno_coltivato">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
     </owl:ObjectProperty>
     
 
@@ -157,6 +171,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
     </owl:ObjectProperty>
     
@@ -166,6 +181,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio_caratteristiche_ambientali">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_ambientali"/>
     </owl:ObjectProperty>
@@ -326,17 +342,18 @@
     
 
 
-    <!-- http://dbpedia.org/ontology/City -->
-
-    <owl:Class rdf:about="http://dbpedia.org/ontology/City"/>
-    
-
-
     <!-- http://dbpedia.org/ontology/Territory -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Territory">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
     
 
 
@@ -420,6 +437,7 @@
     <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdfs:comment xml:lang="it">Un territorio è un&apos;area definita o delimitata che include porzioni di suolo o di acque. Ogni territorio ha associate delle spefiche caratteristiche ambientali che definiscono il clima e la qualità del suolo.</rdfs:comment>
         <rdfs:label xml:lang="it">territorio</rdfs:label>
         <rdfs:label xml:lang="en">territory</rdfs:label>
@@ -438,33 +456,16 @@
     
 
 
-    <!-- http://dbpedia.org/resource/Anzio -->
+    <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Anzio -->
 
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Anzio">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Anzio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
         <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio1"/>
         <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioAnzio2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/resource/Florence -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Florence">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
-        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
-        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
-        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://dbpedia.org/resource/Pompei -->
-
-    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Pompei">
-        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
-        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
-        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+        <coltivazioni2:ha_terreno_coltivato rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio1"/>
+        <coltivazioni2:ha_terreno_coltivato rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColAnzio2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anzio</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Anzio"/>
     </owl:NamedIndividual>
     
 
@@ -790,6 +791,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caratteristiche_climatiche"/>
         <coltivazioni2:ha_precipitazioni rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P400-600"/>
         <coltivazioni2:ha_temperatura rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#T1-30"/>
+        <coltivazioni2:gradoUmidità rdf:datatype="http://www.w3.org/2001/XMLSchema#string">umido</coltivazioni2:gradoUmidità>
     </owl:NamedIndividual>
     
 
@@ -1058,6 +1060,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Firenze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Firenze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
+        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze1"/>
+        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze2"/>
+        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3"/>
+        <coltivazioni2:ha_terreno_coltivato rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerrColFirenze1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firenze</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Florence"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#P100-200">
@@ -1145,6 +1161,18 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#precipitazioni"/>
         <coltivazioni2:precipitazioniMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</coltivazioni2:precipitazioniMax>
         <coltivazioni2:precipitazioniMin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</coltivazioni2:precipitazioniMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Pompei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Pompei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
+        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1"/>
+        <coltivazioni2:ha_terreno rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pompei</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Pompei"/>
     </owl:NamedIndividual>
     
 
@@ -1315,7 +1343,7 @@
         <rdf:type rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#orzo"/>
-        <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Anzio"/>
+        <coltivazioni2:ha_locazione rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Anzio"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio1"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.449165</coltivazioni2:latitudine>
         <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.619278</coltivazioni2:longitudine>
@@ -1329,7 +1357,7 @@
         <rdf:type rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#avena"/>
-        <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Anzio"/>
+        <coltivazioni2:ha_locazione rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Anzio"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAAnzio2"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.44941</coltivazioni2:latitudine>
         <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.623324</coltivazioni2:longitudine>
@@ -1344,7 +1372,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
         <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
-        <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Florence"/>
+        <coltivazioni2:ha_locazione rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Firenze"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.761185</coltivazioni2:latitudine>
         <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.253094</coltivazioni2:longitudine>
@@ -1359,7 +1387,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#lino"/>
         <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#mais"/>
-        <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Florence"/>
+        <coltivazioni2:ha_locazione rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Firenze"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze1"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.74982</coltivazioni2:latitudine>
         <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.270858</coltivazioni2:longitudine>
@@ -1372,7 +1400,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioFirenze3">
         <rdf:type rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
-        <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Florence"/>
+        <coltivazioni2:ha_locazione rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Firenze"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAFirenze2"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.74914</coltivazioni2:latitudine>
         <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">11.272683</coltivazioni2:longitudine>
@@ -1385,7 +1413,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#TerritorioPompei1">
         <rdf:type rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
-        <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Pompei"/>
+        <coltivazioni2:ha_locazione rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Pompei"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei1"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.728935</coltivazioni2:latitudine>
         <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.518529</coltivazioni2:longitudine>
@@ -1399,7 +1427,7 @@
         <rdf:type rdf:resource="http://dbpedia.org/ontology/Territory"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
         <coltivazioni2:caratteristiche_ambientali_compatibili_inv rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#vite"/>
-        <coltivazioni2:ha_locazione rdf:resource="http://dbpedia.org/resource/Pompei"/>
+        <coltivazioni2:ha_locazione rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#Pompei"/>
         <coltivazioni2:territorio_caratteristiche_ambientali rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#CAPompei2"/>
         <coltivazioni2:latitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.74174</coltivazioni2:latitudine>
         <coltivazioni2:longitudine rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.509317</coltivazioni2:longitudine>
@@ -1571,6 +1599,9 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
     <rdf:Description rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#caC">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
@@ -1658,6 +1689,64 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_terreno"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -1707,6 +1796,89 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#coltivata_in"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#City"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#terreno_coltivato"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tc"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_territorio"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tc"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_terreno_coltivato"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#tc"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2267,64 +2439,6 @@ Ha foglie di colore verde chiaro, a forma di guaina, lunghe parecchi centimetri 
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                     </rdf:Description>
                 </rdf:rest>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://dbpedia.org/ontology/City"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#territorio"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_locazione"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#ha_terreno"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#c"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#t"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
             </rdf:Description>
         </swrl:head>
     </rdf:Description>

@@ -43,3 +43,21 @@ class CaratteristicheSuolo:
         self.tessitura = tessitura
 
 
+class Citta:
+    def __init__(self, nome, lat = None, long = None, link = None):
+        self.nome = nome
+        self.lat = lat
+        self.long = long
+        self.link = link
+
+
+class Territorio:
+    def __init__(self, latitudine, longitudine, locazione, caratteristicheAmbientali = None):
+        self.lat = latitudine
+        self.long = longitudine
+        self.locazione = locazione
+        self.caratteristicheAmbientali = caratteristicheAmbientali
+    
+
+
+

@@ -1,7 +1,9 @@
-from SPARQLWrapper import SPARQLWrapper, JSON, N3
+import stat
+from weakref import KeyedRef
+from SPARQLWrapper import XML, SPARQLWrapper, JSON, N3
 from rdflib import Graph
 
-from utils import CaratteristicheAmbientali, CaratteristicheClimatiche, CaratteristicheSuolo, Coltivazione, Precipitazioni, Temperatura
+from utils import CaratteristicheAmbientali, Territorio, CaratteristicheClimatiche, CaratteristicheSuolo, Citta, Coltivazione, Precipitazioni, Temperatura
 
 jena_endpoint = 'http://localhost:3030/ds/sparql'
 dbpedia_endpoint = "http://dbpedia.org/sparql"
@@ -41,7 +43,6 @@ class dbManager:
         coltivazioni = []
         for result in results["results"]["bindings"]:
             coltivazioni.append(result["nome"]["value"])
-            print(result["nome"]["value"])
         return coltivazioni
 
 
@@ -82,17 +83,23 @@ class dbManager:
         PREFIX dbo: <http://dbpedia.org/ontology/> 
         SELECT ?foto ?comment
         WHERE { 
-                <"""+source+"""> dbo:thumbnail ?foto.
-                <"""+source+"""> dbo:abstract ?comment.
+                OPTIONAL {<"""+source+"""> dbo:thumbnail ?foto.}
+                OPTIONAL {<"""+source+"""> dbo:abstract ?comment.}
                 FILTER(LANG (?comment) = 'it' ) }
         """)
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
-        print(len(results))
+        print(results)
         for result in results["results"]["bindings"]:
-            print(result["foto"]["value"])
-            coltivazione.thumbnail = result["foto"]["value"]
-            coltivazione.comment = result["comment"]["value"]
+            #print(result["foto"]["value"])
+            try:
+                coltivazione.thumbnail = result["foto"]["value"]
+            except KeyError:
+                coltivazione.thumbnail = None
+            try: 
+                coltivazione.comment = result["comment"]["value"]
+            except KeyError:
+                coltivazione.comment = None
             
         return coltivazione
 
@@ -249,7 +256,6 @@ class dbManager:
             """)
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
-        riferimenti = []
         sparql.setReturnFormat(N3)
         sparql.setReturnFormat(N3)
         results = sparql.query().convert()
@@ -259,5 +265,105 @@ class dbManager:
             print(f'{s} {p} {o}')
         return graphN3
 
+    
+    @staticmethod
+    def getCittà():
+        sparql = SPARQLWrapper(jena_endpoint)
+        sparql.setQuery("""
+            PREFIX : <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX dbo: <http://dbpedia.org/ontology/> 
 
-dbManager.getColtivazione("Lino")
+            SELECT ?label ?source
+	            WHERE {
+                    ?c a :City.
+                    ?c rdfs:label ?label.
+                    ?c rdfs:seeAlso ?source.}"""
+        )
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+        citta = []
+        print(results)
+        for result in results["results"]["bindings"]:
+            c = Citta(result["label"]["value"], link=result["source"]["value"])
+            #dbManager.getCityDbpedia(c)
+            #print(c.link)
+            citta.append(c)
+        return citta
+
+    @staticmethod
+    def getCityDbpedia(c):
+        source = c.link
+        sparql = SPARQLWrapper(dbpedia_endpoint)
+        sparql.setQuery("""
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX dbo: <http://dbpedia.org/ontology/> 
+        PREFIX geo:<http://www.w3.org/2003/01/geo/wgs84_pos#>
+        SELECT ?lat ?long 
+        WHERE { 
+                OPTIONAL {<"""+source+"""> geo:lat ?lat.}
+                OPTIONAL {<"""+source+"""> geo:long ?long}
+                }
+        """)
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+        print(results)
+        result = results["results"]["bindings"][0]
+        c.lat = result["lat"]["value"]
+        c.long = result["long"]["value"]
+        return None
+
+    
+    @staticmethod
+    def getTerritoriCittà(citta):
+        sparql = SPARQLWrapper(jena_endpoint)
+        sparql.setQuery("""
+            PREFIX : <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX dbo: <http://dbpedia.org/ontology/> 
+
+            SELECT ?latitudine ?longitudine 
+	            WHERE {
+                    ?t a :territorio.
+                    ?t :ha_locazione ?x.
+                    ?x rdfs:label "%s"^^xsd:string.
+                    ?t :latitudine ?latitudine.
+                    ?t :longitudine ?longitudine.}""" %citta
+        )
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+        terreni = []
+        print(results)
+        for result in results["results"]["bindings"]:
+            t = Territorio(result["latitudine"]["value"], result["longitudine"]["value"], citta)
+            terreni.append(t)
+        return terreni
+
+
+    @staticmethod
+    def askTerritorioColtivazione(nome_coltivazione, territorio):
+        sparql = SPARQLWrapper(jena_endpoint)
+        nome_coltivazione = "\""+nome_coltivazione+"\""
+        lat =  "\""+str(territorio.lat)+"\""
+        long =  "\""+str(territorio.long)+"\""
+        sparql.setQuery("PREFIX : <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>\n"
+        "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"
+            "ASK WHERE {"
+                "?c :nome "+nome_coltivazione+"^^xsd:string."
+                "?t :latitudine "+ lat +"^^xsd:float."
+                "?t :longitudine "+long+"^^xsd:float."
+                "?c :caratteristiche_ambientali_compatibili ?t."
+            "}\n")
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+        return results["boolean"]
+
+
+
+
