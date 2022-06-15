@@ -10,18 +10,16 @@ def hello():
     terrenipercitta={}
     coltivazioni = dbManager.getColtivazioni()
     citta = dbManager.getCittà()
-    
-
     for i in citta:
         terrenipercitta[i.nome]=dbManager.getTerritoriCittà(i.nome)
         
     #print(json.dumps(terrenipercitta, indent=4))
     #terreni = dbManager.getTerreni()
-    viafirenze=["via rossi","via sebillo","via garibaldi"]
-    viapompei=["via casillo","via natale"]
-    viaanzio=["via battistoni","via auguri"]
+    viafirenze=["via rossi","via umberto I","via garibaldi"]
+    viapompei=["via della rimembranza","via vittorio emanuele III"]
+    viaanzio=["via barbuti","via isolella"]
     
-    return render_template('index.html', coltivazioni = coltivazioni, terrenipercitta=terrenipercitta,viafirenze=viafirenze,viaanzio=viaanzio,viapompei=viapompei)
+    return render_template('index.html', coltivazioni = coltivazioni, terrenipercitta=terrenipercitta,viafirenze=viafirenze,viaanzio=viaanzio,viapompei=viapompei, citta = citta)
 
 
 @app.route('/search_coltivazione', methods=['GET'])
@@ -31,6 +29,21 @@ def handle_data():
     
     coltivazione = dbManager.getColtivazione(nome_coltivazione)
     return render_template('visualizza_coltivazione.html', coltivazione = coltivazione)
+
+
+@app.route('/search_territoriCitta', methods=['GET'])
+def search_territoriCitta():
+    args = request.args
+    nome_citta = args["c"]
+    
+    territori, terreni = dbManager.getTerreniCitta(nome_citta)
+    for territorio in territori:
+        if len(territorio.coltivazioni_compatibili)>0:
+            print(territorio.coltivazioni_compatibili[0]) 
+    for terreno in terreni:
+        print(terreno.coltivazione)
+    return render_template('visualizza_terreni_citta.html', citta=nome_citta, territori = territori, terreniColtivati = terreni)
+
 
 @app.route('/askcoltivabile', methods=['GET'])
 def askcoltavibile():
@@ -44,19 +57,27 @@ def askcoltavibile():
     if (terreno<3):
         citta="Firenze"
     elif (terreno > 4):
-        terreno=terreno-3
-        citta="Anzio"
-    else:
         terreno=terreno-5
         citta="Pompei"
+    elif (terreno == 3 or terreno ==4):
+        print(terreno)
+        terreno=terreno-3
+        print(terreno)
+        citta="Anzio"
 
     terreno=dbManager.getTerritoriCittà(citta)[terreno]
-    print(terreno)
+    
     oracolo=dbManager.askTerritorioColtivazione(coltivazione,terreno)
-    print(oracolo)
+    
+    if oracolo:
+        oracolo="si può coltivare"
+    else:
+        oracolo="non si può coltivare qui"
     if request.method == 'GET':
         message = {'oracolo':oracolo}
         return jsonify(message)
+
+
 @app.route('/describe_coltivazione', methods=['GET'])
 def describe_coltivazione():
     args = request.args

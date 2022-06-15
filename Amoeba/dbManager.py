@@ -3,25 +3,12 @@ from weakref import KeyedRef
 from SPARQLWrapper import XML, SPARQLWrapper, JSON, N3
 from rdflib import Graph
 
-from utils import CaratteristicheAmbientali, Territorio, CaratteristicheClimatiche, CaratteristicheSuolo, Citta, Coltivazione, Precipitazioni, Temperatura
+from utils import CaratteristicheAmbientali, TerrenoColtivato, Territorio, CaratteristicheClimatiche, CaratteristicheSuolo, Citta, Coltivazione, Precipitazioni, Temperatura
 
 jena_endpoint = 'http://localhost:3030/ds/sparql'
 dbpedia_endpoint = "http://dbpedia.org/sparql"
 
 class dbManager:
-
-    @staticmethod
-    def getTerreni():
-        sparql = SPARQLWrapper(jena_endpoint)
-        sparql.setQuery("""PREFIX : <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>
-            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-            PREFIX owl: <http://www.w3.org/2002/07/owl#>
-            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-            
-        """)
-
-
     @staticmethod
     def getColtivazioni():
         sparql = SPARQLWrapper(jena_endpoint)
@@ -364,6 +351,68 @@ class dbManager:
         sparql.setReturnFormat(JSON)
         results = sparql.query().convert()
         return results["boolean"]
+
+    
+    @staticmethod
+    def getTerreniCitta(nome_citta):
+        territori = dbManager.getTerritoriCittà(nome_citta)
+        nome_citta = "\""+nome_citta+"\""
+        sparql = SPARQLWrapper(jena_endpoint)
+
+        for territorio in territori:
+            lat =  "\""+str(territorio.lat)+"\""
+            long =  "\""+str(territorio.long)+"\""
+            sparql.setQuery("\n"
+            "PREFIX : <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>\n"
+            "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"
+            "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n"
+            "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+            "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
+            "PREFIX dbo: <http://dbpedia.org/ontology/> \n"
+
+            "SELECT ?coltivazione_comp\n" 
+	            "WHERE {"
+                    "?t :latitudine "+ lat +"^^xsd:float."
+                    "?t :longitudine "+long+"^^xsd:float."
+                    "?t :caratteristiche_ambientali_compatibili_inv ?coltivazione_comp."
+                    "}\n"
+            )
+            sparql.setReturnFormat(JSON)
+            results = sparql.query().convert()
+            for result in results["results"]["bindings"]:
+                territorio.coltivazioni_compatibili.append(result["coltivazione_comp"]["value"])
+        
+        sparql.setQuery("\n"
+            "PREFIX : <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>\n"
+            "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"
+            "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n"
+            "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+            "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
+            "PREFIX dbo: <http://dbpedia.org/ontology/>\n "
+
+            "SELECT ?latitudine ?longitudine ?coltivazione\n" 
+	            "WHERE {"
+                    "?t a :terreno_coltivato."
+                    "?t :ha_territorio ?territorio."
+                    "?c rdfs:label "+nome_citta+"^^xsd:string."
+                    "?c :ha_terreno_coltivato ?t."
+                    "?territorio :latitudine ?latitudine."
+                    "?territorio :longitudine ?longitudine."
+                    "?territorio :ha_locazione ?c."
+                    "?t :ha_coltura ?coltivazione."
+                    "}\n"
+        )
+        sparql.setReturnFormat(JSON)
+        results = sparql.query().convert()
+        terreni = []
+        
+        for result in results["results"]["bindings"]:
+            t = TerrenoColtivato(result["latitudine"]["value"], result["longitudine"]["value"], nome_citta, coltivazione=result["coltivazione"]["value"])
+            terreni.append(t)
+        
+        return (territori, terreni)
+        
+
 
 
 

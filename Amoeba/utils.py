@@ -57,6 +57,18 @@ class Territorio:
         self.long = longitudine
         self.locazione = locazione
         self.caratteristicheAmbientali = caratteristicheAmbientali
+        self.coltivazioni_compatibili = []
+
+
+class TerrenoColtivato:
+    def __init__(self, latitudine, longitudine, locazione, caratteristicheAmbientali = None, coltivazione = None):
+        self.lat = latitudine
+        self.long = longitudine
+        self.locazione = locazione
+        self.caratteristicheAmbientali = caratteristicheAmbientali
+        self.coltivazione = coltivazione
+
+
     
 
 
