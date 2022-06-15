@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, session, jsonify
 import json
 from dbManager import dbManager
-from utils import Coltivazione
+from utils import Coltivazione, Encoder
+
 
 app = Flask(__name__,static_folder="templates/static")
 app.jinja_env.filters['zip'] = zip
@@ -35,14 +36,18 @@ def handle_data():
 def search_territoriCitta():
     args = request.args
     nome_citta = args["c"]
-    
+    territorijson=[]
+    terrenijson=[]
     territori, terreni = dbManager.getTerreniCitta(nome_citta)
     for territorio in territori:
         if len(territorio.coltivazioni_compatibili)>0:
-            print(territorio.coltivazioni_compatibili[0]) 
+            print(territorio.coltivazioni_compatibili[0])
+    for territorio in territori:
+        territorijson.append(Encoder().encode(territorio))
     for terreno in terreni:
-        print(terreno.coltivazione)
-    return render_template('visualizza_terreni_citta.html', citta=nome_citta, territori = territori, terreniColtivati = terreni)
+        terrenijson.append(Encoder().encode(terreno))
+    
+    return render_template('visualizza_terreni_citta.html', citta=nome_citta, territori = territorijson, terreni = terrenijson)
 
 
 @app.route('/askcoltivabile', methods=['GET'])

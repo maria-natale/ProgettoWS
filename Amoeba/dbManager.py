@@ -380,7 +380,10 @@ class dbManager:
             sparql.setReturnFormat(JSON)
             results = sparql.query().convert()
             for result in results["results"]["bindings"]:
-                territorio.coltivazioni_compatibili.append(result["coltivazione_comp"]["value"])
+                stringa=result["coltivazione_comp"]["value"].rsplit("#",1)[1]
+                print(stringa)
+                territorio.coltivazioni_compatibili.append(stringa)
+                
         
         sparql.setQuery("\n"
             "PREFIX : <http://www.semanticweb.org/maria/ontologies/2022/5/coltivazioni2#>\n"
@@ -409,7 +412,6 @@ class dbManager:
         for result in results["results"]["bindings"]:
             t = TerrenoColtivato(result["latitudine"]["value"], result["longitudine"]["value"], nome_citta, coltivazione=result["coltivazione"]["value"])
             terreni.append(t)
-        
         return (territori, terreni)
         
 

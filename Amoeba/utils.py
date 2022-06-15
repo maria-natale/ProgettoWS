@@ -1,3 +1,6 @@
+import json
+from json import JSONEncoder
+
 class Coltivazione:
     def __init__(self, nome, nomelatino, morfologia, link, caratteristicheAmbientali = None, comment = None, thumbnail = None):
         self.nome = nome
@@ -60,6 +63,11 @@ class Territorio:
         self.coltivazioni_compatibili = []
 
 
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, 
+            sort_keys=True, indent=4)
+
+
 class TerrenoColtivato:
     def __init__(self, latitudine, longitudine, locazione, caratteristicheAmbientali = None, coltivazione = None):
         self.lat = latitudine
@@ -68,8 +76,13 @@ class TerrenoColtivato:
         self.caratteristicheAmbientali = caratteristicheAmbientali
         self.coltivazione = coltivazione
 
+    def toJSON(self):
+            return json.dumps(self, default=lambda o: o.__dict__, 
+                sort_keys=True, indent=4)
 
     
-
+class Encoder(JSONEncoder):
+        def default(self, o):
+            return o.__dict__
 
 
