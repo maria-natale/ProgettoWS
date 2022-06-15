@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+   
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}">
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/bootstrap-icons/bootstrap-icons.css') }}">
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/glightbox/css/glightbox.min.css') }}">
@@ -27,6 +28,11 @@
   <!-- Template Main CSS File -->
   
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/leaflet.css')}}"> 
+
+  <script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js') }}"> </script>
+  <script src="{{ url_for('static',filename='js/jquery-migrate-1.4.1.min.js') }}"> </script>
+  <script src="{{ url_for('static',filename='js/leaflet.js') }}"></script>
 
   <!-- =======================================================
   * Template Name: Amoeba - v4.7.0
@@ -58,7 +64,67 @@
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container">
+      <div id="mappeverdi" style="height:500px;">
+      
+      </div>
+        <script>
+        
+        var territori={{territori | tojson}};
+        var terreni = {{terreni | tojson}};
+        
+        
+        var map = L.map('mappeverdi').setView([41.87194, 12.56738], 5);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '© OpenStreetMap'
+      }).addTo(map);
+      var popup = L.popup();
+      
+      map.touchZoom.disable();
+      map.doubleClickZoom.disable();
+     
+      map.boxZoom.disable();
+      map.keyboard.disable();
 
+      var greenIcon = new L.Icon({
+      iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+      });
+      var redIcon = new L.Icon({
+	    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+      shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+	    iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+});
+      if (map.tap) map.tap.disable();
+        document.getElementById('mappeverdi').style.cursor='default';
+      for (let i = 0; i < territori.length; i++){
+       cavia=JSON.parse(territori[i])
+       compatibile=cavia.coltivazioni_compatibili
+       L.marker([parseFloat(cavia.lat), parseFloat(cavia.long)],{icon:greenIcon}).addTo(map).bindPopup(compatibile.toString());
+       
+      }
+      for (let i = 0; i < terreni .length; i++){
+        cavia=JSON.parse(terreni[i])
+        coltivato=cavia.coltivazione
+        L.marker([parseFloat(cavia.lat), parseFloat(cavia.long)],{icon:redIcon}).addTo(map).bindPopup(coltivato.toString().split("#")[1]);
+
+      }
+      //L.marker([43.7695604, 11.2558136],{title:"Firenze"}).addTo(map).on('click', onClick); //firenze
+      //L.marker([41.4526300, 12.6215700],{title:"Anzio"}).addTo(map).on('click', onClick); //Anzio
+      //L.marker([40.7457400, 14.4969800],{title:"Pompei"}).addTo(map).on('click', onClick); //Pompei
+              
+
+
+
+
+        </script>
         
     </div>
 
