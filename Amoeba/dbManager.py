@@ -1,5 +1,3 @@
-import stat
-from weakref import KeyedRef
 from SPARQLWrapper import XML, SPARQLWrapper, JSON, N3
 from rdflib import Graph
 

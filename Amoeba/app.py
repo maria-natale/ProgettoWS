@@ -56,7 +56,6 @@ def askcoltavibile():
     coltivazione = args["col"]
     terreno = args["terr"]
     print(terreno)
-    print("AAAAAAAAAAA")
     print(coltivazione)
     terreno=int(terreno)
     if (terreno<3):
@@ -73,7 +72,7 @@ def askcoltavibile():
     terreno=dbManager.getTerritoriCittà(citta)[terreno]
     
     oracolo=dbManager.askTerritorioColtivazione(coltivazione,terreno)
-    
+    print(oracolo)
     if oracolo:
         oracolo="si può coltivare"
     else:

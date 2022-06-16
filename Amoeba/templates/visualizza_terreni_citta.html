@@ -107,14 +107,13 @@
       for (let i = 0; i < territori.length; i++){
        cavia=JSON.parse(territori[i])
        compatibile=cavia.coltivazioni_compatibili
-       L.marker([parseFloat(cavia.lat), parseFloat(cavia.long)],{icon:greenIcon}).addTo(map).bindPopup(compatibile.toString());
+       L.marker([parseFloat(cavia.lat), parseFloat(cavia.long)],{icon:greenIcon}).addTo(map).bindPopup("Piante coltivabili:\n"+ compatibile.toString());
        
       }
       for (let i = 0; i < terreni .length; i++){
         cavia=JSON.parse(terreni[i])
         coltivato=cavia.coltivazione
-        L.marker([parseFloat(cavia.lat), parseFloat(cavia.long)],{icon:redIcon}).addTo(map).bindPopup(coltivato.toString().split("#")[1]);
-
+        L.marker([parseFloat(cavia.lat), parseFloat(cavia.long)],{icon:redIcon}).addTo(map).bindPopup("Coltivate: \n"+coltivato.toString().split("#")[1]);
       }
       //L.marker([43.7695604, 11.2558136],{title:"Firenze"}).addTo(map).on('click', onClick); //firenze
       //L.marker([41.4526300, 12.6215700],{title:"Anzio"}).addTo(map).on('click', onClick); //Anzio
